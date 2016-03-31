@@ -1303,6 +1303,7 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
+  outline: 0;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
@@ -1336,7 +1337,8 @@ h1, .h1 {
 h2, .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
-  margin-bottom: 0.375em; }
+  margin-bottom: 0.375em;
+  color: #51b5e6; }
 
 h3, .h3 {
   font-size: 1.125em; }
@@ -1530,12 +1532,24 @@ POSTS & CONTENT STYLES
 /****************************/
 /* CUSTOM HOME PAGE STYLES */
 /**************************/
+* {
+  outline: 0; }
+
 .body {
   background: #FFFFFF;
   color: #7d7d7d; }
 
 #content {
   margin-top: 0px; }
+
+.page-content {
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+  padding-bottom: 1em;
+  border-top: 8px solid #f1c309; }
+  .page-content p {
+    font-size: 14px; }
 
 .header {
   background: #FFFFFF; }
@@ -1550,11 +1564,22 @@ POSTS & CONTENT STYLES
   width: 100%; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  outline: 0; }
+
+p {
+  outline: 0; }
+
+.mobile-nav-button {
+  float: left;
+  position: absolute;
+  top: 25px;
+  left: 25px; }
 
 .mobile-navigation {
   background: #232d4f;
-  width: 75%; }
+  width: 75%;
+  display: none; }
   .mobile-navigation .mobile-navigation-container {
     margin-left: 20%;
     margin-right: 5%;
@@ -1691,13 +1716,44 @@ a {
     font-size: 20px;
     margin-bottom: 5px; }
   .locations-footer p.white {
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 2px;
     margin-top: 2px; }
   .locations-footer hr {
     background-color: #FFFFFF;
     height: 1.5px;
     margin-bottom: 2em; }
+
+.sub-header {
+  margin-top: 0px;
+  margin-bottom: 1.5em; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.lowercase {
+  text-transform: none; }
+
+.bold {
+  font-weight: bold; }
+
+.no-padding {
+  padding: 0px;
+  margin: 0px; }
+
+.no-padding-top {
+  padding-top: 0px;
+  margin-top: 0px; }
+
+.no-padding-bottom {
+  padding-bottom: 0px;
+  margin-bottom: 0px; }
+
+.yellow {
+  background: #f1c309; }
+
+.pointer-cursor {
+  cursor: pointer; }
 
 p.dark-blue {
   color: #232d4f;
@@ -1729,9 +1785,41 @@ p.need-help {
   text-transform: uppercase;
   font-size: 15px; }
 
-p.main-content {
+.doctor {
+  padding-bottom: 35px; }
+
+.doctor-image {
+  max-width: 200px;
+  height: auto;
+  width: 100%; }
+
+.main-content {
   color: #7d7d7d;
   font-family: arial; }
+
+/* Open icon state override for accordion on FAQ */
+.ui-icon-circle-arrow-s {
+  background-image: url("../images/arrow-open.png") !important;
+  background-size: 13px !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  height: 15px !important;
+  width: 15px !important;
+  position: absolute !important;
+  margin-left: -20px !important;
+  margin-top: 5px !important; }
+
+/* Closed icon state override for accordion on FAQ */
+.ui-icon-circle-arrow-e {
+  background-image: url("../images/arrow-closed.png") !important;
+  background-size: 8px !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  height: 23px !important;
+  width: 15px !important;
+  position: absolute !important;
+  margin-left: -20px !important;
+  margin-top: 4px !important; }
 
 .fancy-button, .fancy-button:active, .fancy-button:visited {
   background-color: #f1c309;
@@ -1753,9 +1841,10 @@ p.main-content {
 
 .blue-button, .blue-button:active, .blue-button:visited {
   display: block;
-  width: 150px;
+  width: 100%;
   background: #51b5e6;
   min-width: 100px;
+  max-width: 215px;
   text-align: center;
   color: #FFFFFF;
   border-radius: 15px;
@@ -1764,6 +1853,9 @@ p.main-content {
   font-weight: bold;
   margin-bottom: 10px;
   text-decoration: none; }
+
+.full-width {
+  width: 100%; }
 
 .blue-button:hover {
   color: #FFFFFF !important;

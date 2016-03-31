@@ -79,6 +79,8 @@ LINK STYLES
 
 a, a:visited {
 
+	outline: 0;
+
 
 	/* on hover */
 	&:hover, &:focus {
@@ -107,8 +109,8 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-rendering: optimizelegibility;
 	font-weight: 500;
-	  color: #232d4f;
-  text-transform: uppercase;
+	color: #232d4f;
+  	text-transform: uppercase;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -129,6 +131,7 @@ h2, .h2 {
 	font-size: 1.75em;
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
+	color: #51b5e6;
 }
 
 h3, .h3 {
@@ -490,6 +493,10 @@ POSTS & CONTENT STYLES
 /* CUSTOM HOME PAGE STYLES */
 /**************************/
 
+* {
+	outline: 0;
+}
+
 .body {
 	background: #FFFFFF;
 	color: #7d7d7d;
@@ -497,6 +504,18 @@ POSTS & CONTENT STYLES
 }
 
 #content {margin-top: 0px;}
+
+.page-content {
+	padding-left: 15%;
+	padding-right: 15%;
+	text-align: center;
+	padding-bottom: 1em;
+	border-top: 8px solid #f1c309;
+
+	p {
+		font-size: 14px;
+	}
+}
 
 .header {
 	background: #FFFFFF;
@@ -512,13 +531,27 @@ POSTS & CONTENT STYLES
 }
 .wrap {width: 100%;}
 
+
 a {
 	text-decoration: none;
+	outline: 0;
+}
+
+p {
+	outline: 0;
+}
+
+.mobile-nav-button {
+	float: left;
+	position: absolute;
+	top: 25px;
+	left: 25px;
 }
 
 .mobile-navigation {
 	background: #232d4f;
 	width: 75%;
+	display: none;
 
 	.mobile-navigation-container {
 		margin-left:  20%;
@@ -720,7 +753,7 @@ a {
 	}
 
 	p.white {
-		font-size: 14px;
+		font-size: 12px;
 		margin-bottom: 2px;
 		margin-top: 2px;
 	}
@@ -731,6 +764,48 @@ a {
 		margin-bottom: 2em;
 	}
 
+}
+
+.sub-header {
+	margin-top: 0px;
+	margin-bottom: 1.5em;
+
+}
+
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase {
+	text-transform: none;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.no-padding {
+	padding: 0px;
+	margin: 0px;
+}
+
+.no-padding-top {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.no-padding-bottom {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.yellow {
+	background: #f1c309;
+}
+
+.pointer-cursor {
+	cursor: pointer;
 }
 
 p.dark-blue {
@@ -769,10 +844,50 @@ p.need-help {
 	font-size: 15px;
 }
 
-p.main-content {
+.doctor {
+	padding-bottom: 35px;
+}
+
+.doctor-image {
+	max-width: 200px;
+	height: auto;
+	width: 100%;
+}
+
+.main-content {
 	color: #7d7d7d;
 	font-family: arial;
 }
+
+/* Open icon state override for accordion on FAQ */
+
+.ui-icon-circle-arrow-s {
+    background-image: url("../images/arrow-open.png") !important;
+    background-size: 13px !important;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    height: 15px !important;
+    width: 15px !important;
+    position: absolute !important;
+    margin-left: -20px !important;
+    margin-top: 5px !important;
+}
+
+/* Closed icon state override for accordion on FAQ */
+
+.ui-icon-circle-arrow-e {
+    background-image: url("../images/arrow-closed.png") !important;
+    background-size: 8px !important;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    height: 23px !important;
+    width: 15px !important;
+    position: absolute !important;
+    margin-left: -20px !important;
+    margin-top: 4px !important;
+}
+
+
 
 .fancy-button, .fancy-button:active, .fancy-button:visited {
 	background-color: #f1c309;
@@ -798,9 +913,10 @@ p.main-content {
 
 .blue-button, .blue-button:active, .blue-button:visited {
 	display: block;
-	width: 150px;
+	width: 100%;
 	background: #51b5e6;
 	min-width: 100px;
+	max-width: 215px;
 	text-align: center;
 	color: #FFFFFF;
 	border-radius: 15px;
@@ -809,6 +925,10 @@ p.main-content {
 	font-weight: bold;
 	margin-bottom: 10px;
 	text-decoration: none;
+}
+
+.full-width {
+	width: 100%;
 }
 
 .blue-button:hover {

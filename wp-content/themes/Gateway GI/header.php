@@ -29,7 +29,11 @@
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
             <meta name="theme-color" content="#121212">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+       <!-- jQuery Core CDN-->
+        <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script> 
+
+        <!-- jQuery UI CDN -->
+        <script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
 
         <!-- Google fonts -->
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -73,9 +77,9 @@
 						</div><!-- mobile-navigation-container -->
 					</div><!-- mobile-navigation -->
 
-		        	<a id="open-left"><img src="/wp-content/themes/Gateway%20GI/library/images/mobile-menu.png" style="float: left; top: 2%; left: 2%;"/></a>
+		        	<a id="open-left"><img src="/wp-content/themes/Gateway%20GI/library/images/mobile-menu.png" class="mobile-nav-button"/></a>
 
-					<img src="/wp-content/themes/Gateway%20GI/library/images/gatewaygi-logo.png" class="logo"/>
+					<a href="/"><img src="/wp-content/themes/Gateway%20GI/library/images/gatewaygi-logo.png" class="logo"/></a>
 					
 				</div><!-- inner-header -->
 

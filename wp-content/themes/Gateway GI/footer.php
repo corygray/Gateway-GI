@@ -4,7 +4,7 @@
 
 					<div class="locations">
 						<div class="locations-inner">
-						<img src="wp-content/themes/Gateway%20GI/library/images/navigation-icon.png" class="navigation-icon"/>
+						<img src="../wp-content/themes/Gateway%20GI/library/images/navigation-icon.png" class="navigation-icon"/>
 						<p class="need-help">Need help locating our offices?</p>
 
 						<h1>Check out our <span style="color: #FFFFFF;">3</span> office locations</h1>
