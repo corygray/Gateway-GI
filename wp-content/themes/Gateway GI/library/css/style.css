@@ -1529,9 +1529,9 @@ POSTS & CONTENT STYLES
 .tags {
   margin: 0; }
 
-/****************************/
-/* CUSTOM HOME PAGE STYLES */
-/**************************/
+/******************/
+/* CUSTOM STYLES */
+/****************/
 * {
   outline: 0; }
 
@@ -1578,8 +1578,7 @@ p {
 
 .mobile-navigation {
   background: #232d4f;
-  width: 75%;
-  display: none; }
+  width: 75%; }
   .mobile-navigation .mobile-navigation-container {
     margin-left: 20%;
     margin-right: 5%;
@@ -1759,7 +1758,7 @@ p.dark-blue {
   color: #232d4f;
   text-transform: uppercase; }
 
-p.blue {
+p.blue, .blue {
   text-transform: uppercase;
   color: #51b5e6 !important; }
 
@@ -1793,9 +1792,25 @@ p.need-help {
   height: auto;
   width: 100%; }
 
+.blue-button-dropdown {
+  display: none;
+  font-weight: bold; }
+  .blue-button-dropdown li a {
+    color: #232d4f; }
+
 .main-content {
   color: #7d7d7d;
   font-family: arial; }
+
+.location {
+  margin-bottom: 25px; }
+
+.location-image {
+  max-width: 275px;
+  height: auto;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 /* Open icon state override for accordion on FAQ */
 .ui-icon-circle-arrow-s {
@@ -1856,6 +1871,9 @@ p.need-help {
 
 .full-width {
   width: 100%; }
+
+.left {
+  padding-bottom: 1.5em; }
 
 .blue-button:hover {
   color: #FFFFFF !important;
@@ -2132,6 +2150,26 @@ tweeners.
   anymore, so just be aware that if you drop
   them in here, they won't work.
   */
+  /******************/
+  /* CUSTOM STYLES */
+  /****************/
+  .procedures .content ul.yellow-procedures li {
+    display: inline-block;
+    padding-right: 20px; }
+
+  .left {
+    float: left; }
+
+  .right {
+    float: right;
+    margin-bottom: 20px; }
+
+  .fifty-percent {
+    width: 50%; }
+
+  .locations-footer {
+    text-align: left; }
+
   /*********************
   NAVIGATION STYLES
   *********************/

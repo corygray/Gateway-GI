@@ -489,9 +489,9 @@ POSTS & CONTENT STYLES
 	}
 
 
-/****************************/
-/* CUSTOM HOME PAGE STYLES */
-/**************************/
+/******************/
+/* CUSTOM STYLES */
+/****************/
 
 * {
 	outline: 0;
@@ -551,7 +551,7 @@ p {
 .mobile-navigation {
 	background: #232d4f;
 	width: 75%;
-	display: none;
+	// display: none;
 
 	.mobile-navigation-container {
 		margin-left:  20%;
@@ -813,7 +813,7 @@ p.dark-blue {
 	text-transform: uppercase;
 }
 
-p.blue {
+p.blue, .blue {
 	text-transform: uppercase;
 	color: #51b5e6 !important;
 }
@@ -854,9 +854,36 @@ p.need-help {
 	width: 100%;
 }
 
+
+.blue-button-dropdown {
+	display: none;
+	font-weight: bold;
+
+	li {
+
+		a {
+			color: #232d4f;
+
+		}
+	}
+}
+
 .main-content {
 	color: #7d7d7d;
 	font-family: arial;
+}
+
+.location {
+	margin-bottom: 25px;
+
+}
+
+.location-image {
+	max-width: 275px;
+	height: auto;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /* Open icon state override for accordion on FAQ */
@@ -929,6 +956,10 @@ p.need-help {
 
 .full-width {
 	width: 100%;
+}
+
+.left {
+	padding-bottom: 1.5em;
 }
 
 .blue-button:hover {

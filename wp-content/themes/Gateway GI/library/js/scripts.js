@@ -104,6 +104,28 @@ function loadGravatars() {
 	}
 } // end function
 
+/****************************** INITIATE SNAP.JS ******************************/
+  function initSnap() {
+    // Initiate snap.js
+    var snapper = new Snap({
+      element: document.getElementById('wrap'),
+      disable: 'right'
+    });
+
+    // Tapping/Clicking the hamburger opens nav
+    var addEvent = function addEvent(element, eventName, func) {
+      if (element.addEventListener) {
+        return element.addEventListener(eventName, func, false);
+      } else if (element.attachEvent) {
+        return element.attachEvent("on" + eventName, func);
+      }
+    };
+
+    addEvent(document.getElementById('open-left'), 'click', function(){
+      snapper.open('left');
+    });
+  }
+
 
 /*
  * Put all your regular jQuery in here.
@@ -115,6 +137,7 @@ jQuery(document).ready(function($) {
    * You can remove this if you don't need it
   */
   loadGravatars();
+  initSnap();
 
 
 }); /* end of as page load scripts */

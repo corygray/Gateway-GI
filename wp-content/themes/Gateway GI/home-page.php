@@ -88,16 +88,20 @@ Template Name: Home Page Template
 				<hr />
 
 				<div style="text-align: center;font-weight: bold;">
-					<p class="dark-blue" style="margin-top: .2em; margin-bottom: .2em;">Colon Cancer Screening</p>
-					<p class="blue" style="margin-top: .2em; margin-bottom: 1em;">It can save your life!</p>
-					<a class="view-more-button" href="#" style="margin-top: .2em; margin-bottom: 1em;">Read More</a>
 
-					<p>&nbsp;</p><p></p>
+					<div class="left fifty-percent">
+						<p class="dark-blue" style="margin-top: .2em; margin-bottom: .2em;">Colon Cancer Screening</p>
+						<p class="blue" style="margin-top: .2em; margin-bottom: 1em;">It can save your life!</p>
+						<a class="view-more-button" href="#" style="margin-top: .2em; margin-bottom: 1em;">Read More</a>
+					</div><!-- left 50-percent -->
 
-					<p class="dark-blue" style="margin-top: .2em; margin-bottom: .2em;">Hemorrhoids?</p>
-					<p class="blue" style="margin-top: .2em; margin-bottom: .2em;">Dont' treat them.<br />Remove them.</p>
-					<p class="dark-blue" style="margin-top: .2em; margin-bottom: 1em;">Ask us!</p>
-					<a class="view-more-button" href="#" style="margin-top: .2em; margin-bottom: 1em;">Read More</a>
+					<div class="right fifty-percent">
+						<p class="dark-blue" style="margin-top: .2em; margin-bottom: .2em;">Hemorrhoids?</p>
+						<p class="blue" style="margin-top: .2em; margin-bottom: .2em;">Dont' treat them.<br />Remove them.</p>
+						<p class="dark-blue" style="margin-top: .2em; margin-bottom: 1em;">Ask us!</p>
+						<a class="view-more-button" href="#" style="margin-top: .2em; margin-bottom: 1em;">Read More</a>
+					</div>
+
 				</div> <!-- text align center div -->
 
 			</div> <!--recent-news -->

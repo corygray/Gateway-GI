@@ -22,6 +22,34 @@ anymore, so just be aware that if you drop
 them in here, they won't work.
 */
 
+/******************/
+/* CUSTOM STYLES */
+/****************/
+
+
+.procedures .content ul.yellow-procedures li {
+	display: inline-block; 
+	padding-right: 20px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+	margin-bottom: 20px;
+}
+
+.fifty-percent {
+	width: 50%;
+}
+
+.locations-footer {
+	text-align: left;
+}
+
+
 
 /*********************
 NAVIGATION STYLES
@@ -100,6 +128,8 @@ POSTS & CONTENT STYLES
 	}
 
 } /* end .entry-content */
+
+
 
 /*********************
 FOOTER STYLES
