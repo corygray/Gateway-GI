@@ -104,6 +104,18 @@ function loadGravatars() {
 	}
 } // end function
 
+/***************************** Body diagram drop down functionality ********/
+function toggleSomething() {
+  $('.toggle').hide();
+  $('.area p').addClass('inactive');
+  $('.area p').click(function () {
+    $('.toggle').slideUp();
+    $(this).toggleClass('inactive');
+    $(this).toggleClass('active');
+    $(this).parent().find('.toggle').slideDown();
+  });
+}
+
 /****************************** INITIATE SNAP.JS ******************************/
   function initSnap() {
     // Initiate snap.js
@@ -138,6 +150,7 @@ jQuery(document).ready(function($) {
   */
   loadGravatars();
   initSnap();
+  toggleSomething();
 
 
 }); /* end of as page load scripts */

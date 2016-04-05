@@ -27,9 +27,12 @@ Template Name: Home Page Template
 				<h1>A Better Way - Gateway</h1>
 				<p class="main-content">Gateway Gastroenterology is a group of eight board certified gastroenterologists. Our goal is to is to provide outstanding care in a timely, courteous, and professional manner. Our mission is to aid in improving your digestive health and also to be a resource to your primary care physician in caring for you. All of our physicians are committed to ongoing education and will make every effort to provide you with the most up to date and thorough care possible. We offer a wide variety of gastroenterology services including inpatient and outpatient consultation as well as a broad range of endoscopic procedures including upper endoscopy and colonoscopy.</p>
 
+				<p class="satisfaction-testimonials uppercase">Our patient satisfaction score is <span class="big blue">99%*</span> <span class="yellow-text">Read our patient testimonials</span> > </p>
+
 			</div><!-- text-blurb -->
 
 			<div class="procedures">
+
 				<div class="content">
 					<h1>Procedures</h1>
 					<ul class="yellow-procedures">
@@ -52,20 +55,111 @@ Template Name: Home Page Template
 					<h1>Areas of Expertise</h1>
 					<p>What sets Gateway Gastroenterology apart from other practices is the training of our physicians! Our skilled doctors can help you with issues for any of the following areas. </p>
 
-					<a href="#" class="blue-button">Liver</a>
+					<div class="mobile-areas">
+						<a href="#" class="blue-button">Liver</a>
 
-					<ul class="procedures-list">
-						<li>Procedure #1</li>
-						<li>Procedure #2</li>
-						<li>Procedure #3</li>
-					</ul>
+						<ul class="procedures-list">
+							<li>Procedure #1</li>
+							<li>Procedure #2</li>
+							<li>Procedure #3</li>
+						</ul>
 
-					<a href="#" class="blue-button">Gall Bladder</a>
-					<a href="#" class="blue-button">Large Intestine</a>
-					<a href="#" class="blue-button">Small Intestine</a>
-					<a href="#" class="blue-button">Esophagus</a>
-					<a href="#" class="blue-button">Stomach</a>
-					<a href="#" class="blue-button">Pancreas</a>
+						<a href="#" class="blue-button">Gall Bladder</a>
+						<a href="#" class="blue-button">Large Intestine</a>
+						<a href="#" class="blue-button">Small Intestine</a>
+						<a href="#" class="blue-button">Esophagus</a>
+						<a href="#" class="blue-button">Stomach</a>
+						<a href="#" class="blue-button">Pancreas</a>
+					</div><!-- mobile-areas -->
+
+					<div class="tablet-desktop-areas">
+
+					<p class="blue uppercase bold" align="center">Tap on the different organs to see what procedures we offer</p>
+
+						<div class="areas-infograph-wrap">
+
+						  <div class="area liver">
+						    <p>Liver</p>
+						    <div class="toggle">
+						      <ul>
+						        <li>Procedure 1</li>
+						        <li>Procedure 2</li>
+						        <li>Procedure 3</li>
+						      </ul>
+						    </div><!-- toggle -->
+						  </div><!-- area liver -->
+
+						  <div class="area gall-bladder">
+							  <p>Gall Bladder</p>
+							  <div class="toggle">
+							  	<ul>
+								  	<li>Procedure 1</li>
+								  	<li>Procedure 2</li>
+								  	<li>Procedure 3</li>
+							  	</ul>
+							  </div><!-- toggle -->
+						  </div><!-- area gall-bladder -->
+
+						  <div class="area large-intestine">
+							  <p>Large Intestine<br />
+							  (Colon)
+							  </p>
+							  <div class="toggle">
+							  	<ul>
+								  	<li>Procedure 1</li>
+								  	<li>Procedure 2</li>
+								  	<li>Procedure 3</li>
+							  	</ul>
+							  </div><!-- toggle -->
+						  </div><!-- area large-intestine -->
+
+						  <div class="area esophagus">
+						    <p>Esophagus</p>
+						    <div class="toggle">
+						      <ul>
+						        <li>Procedure 1</li>
+						        <li>Procedure 2</li>
+						        <li>Procedure 3</li>
+						      </ul>
+						    </div><!-- toggle -->
+						  </div> <!-- area esophagus -->
+
+						  <div class="area stomach">
+						    <p>Stomach</p>
+						    <div class="toggle">
+						      <ul>
+						        <li>Procedure 1</li>
+						        <li>Procedure 2</li>
+						        <li>Procedure 3</li>
+						      </ul>
+						    </div><!-- toggle -->
+						  </div><!-- area stomach -->
+
+						  <div class="area pancreas">
+						    <p>Pancreas</p>
+						    <div class="toggle">
+						      <ul>
+						        <li>Procedure 1</li>
+						        <li>Procedure 2</li>
+						        <li>Procedure 3</li>
+						      </ul>
+						    </div><!-- toggle -->
+						  </div> <!-- area pancreas -->
+
+						  <div class="area small-intestine">
+							  <p>Small Intestine</p>
+							  <div class="toggle">
+							  	<ul>
+								  	<li>Procedure 1</li>
+								  	<li>Procedure 2</li>
+								  	<li>Procedure 3</li>
+							  	</ul>
+							  </div><!-- toggle -->
+						  </div><!-- area small-intestine -->
+
+						</div><!-- areas-infograph-wrap -->
+
+					</div><!-- tablet-desktop-areas -->
 				</div><!-- procedures content -->
 			</div><!-- procedures -->
 

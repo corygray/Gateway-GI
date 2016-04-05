@@ -1,0 +1,100 @@
+.text-blurb h1 {
+	font-weight: normal;
+}
+
+p.satisfaction-testimonials {
+	display: block !important;
+    border-top: 2px solid #51b5e6;
+    border-bottom: 2px solid #51b5e6;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #232d4f;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 9px;
+
+}
+
+
+.procedures {
+	padding-bottom: 65px;
+}
+
+.mobile-areas {
+	display: none;
+}
+
+.tablet-desktop-areas {
+
+	display: block;
+
+	.areas-infograph-wrap {
+		background-image: url('../images/diagram.png');
+		background-size: 300px;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		width: 500px; /* Since we're absolute positioning child elements, we will need to set a width and height, but we would probably need to do this anyway for the background image */
+		height: 435px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.area {
+	}
+
+	.area p {
+		font-size: 16px;
+		color: #51b5e6;
+	}
+
+	.area .active {
+		z-index: 9999;
+	}
+
+	.area p.inactive {
+		color: #51b5e6;
+		font-weight: bold;
+	}
+
+	.liver {
+	  position: absolute;
+	  top: 220px;
+	  left: 55px;
+	}
+
+	.gall-bladder {
+		position: absolute;
+		top: 257px;
+    	left: 5px;
+	}
+
+	.large-intestine {
+		position: absolute;
+		top: 330px;
+		left: 5px;
+	}
+
+	.esophagus {
+	  position: absolute;
+	  top: 155px;
+	  right: 25px;
+	}
+
+	.stomach {
+	  position: absolute;
+	  top: 219px;
+	  right: 20px;
+	}
+
+	.pancreas {
+	  position: absolute;
+	  top: 262px;
+	  right: 90px;
+	}
+
+	.small-intestine {
+		position: absolute;
+		right: 35px;
+		top: 312px;
+	}
+}

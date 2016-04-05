@@ -3,29 +3,24 @@
 				<div id="inner-footer" class="wrap cf">
 
 					<div class="locations">
-						<div class="locations-inner">
-						<img src="../wp-content/themes/Gateway%20GI/library/images/navigation-icon.png" class="navigation-icon"/>
-						<p class="need-help">Need help locating our offices?</p>
+						<div class="locations-inner top">
+							<img src="../wp-content/themes/Gateway%20GI/library/images/navigation-icon.png" class="navigation-icon"/>
+							<p class="need-help">Need help locating our offices?</p>
 
-						<h1>Check out our <span style="color: #FFFFFF;">3</span> office locations</h1>
+							<h1 class="location-header">Check out our <span style="color: #FFFFFF;">3</span> office locations</h1>
 
-						<a class="fancy-button">Get Directions</a><br /><br />
+							<a class="fancy-button directions" href="../locations">Get Directions</a><br /><br />
 
-						<p style="text-align: left; margin-bottom: 7px;">EXPLORE HEALTH TOPICS</p>
-						<input type="text" class="fancy-input" placeholder="ex. How can I prevent..?"/>
+							<p style="margin-bottom: 7px;">EXPLORE HEALTH TOPICS</p>
+							<input type="text" class="fancy-input" placeholder="ex. How can I prevent..?"/>
 
-						<P style="text-align: left; margin-bottom: 7px;">NEWSLETTER SIGNUP</p>
-						<input type="text" class="newsletter-signup" placeholder="name"/>
-						<input type="text" class="newsletter-signup" placeholder="email"/><br />
+							<P style="margin-bottom: 7px;">NEWSLETTER SIGNUP</p>
+							<input type="text" class="newsletter-signup" placeholder="name"/>
+							<input type="text" class="newsletter-signup" placeholder="email"/><br />
 
-						<a class="fancy-button">Submit</a>
-
-
-
+							<a class="fancy-button">Submit</a>
 
 						</div><!-- locations-inner" -->
-
-
 					
 					</div><!-- locations -->
 
@@ -46,7 +41,7 @@
 
 							<hr />
 
-							<p class="white" style="font-family: arial;font-weight: bold;">Copyright © 2015 Gateway Gastroenterology.<br />All rights reserved.</p>
+							<p class="white" style="font-family: arial;font-weight: bold;">Copyright © 2015 Gateway Gastroenterology. <br />All rights reserved.</p>
 
 						</div><!-- locations-inner -->
 

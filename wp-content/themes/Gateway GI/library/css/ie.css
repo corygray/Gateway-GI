@@ -186,6 +186,15 @@ them in here, they won't work.
 /******************/
 /* CUSTOM STYLES */
 /****************/
+.page-content {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left; }
+
+.locations-inner {
+  margin-left: 10%;
+  margin-right: 10%; }
+
 .procedures .content ul.yellow-procedures li {
   display: inline-block;
   padding-right: 20px; }
@@ -202,6 +211,87 @@ them in here, they won't work.
 
 .locations-footer {
   text-align: left; }
+
+.locations-inner.top p {
+  text-align: center;
+  font-size: 25px; }
+
+.fancy-input {
+  margin: 0 auto;
+  max-width: 335px !important;
+  width: 100%; }
+
+.blue-button {
+  max-width: 335px !important; }
+
+.newsletter-signup {
+  margin: 0 auto;
+  max-width: 335px !important;
+  width: 100%; }
+
+p.need-help {
+  max-width: 335px;
+  margin: 0 auto;
+  font-size: 16px !important;
+  margin-top: 10px; }
+
+p.white br {
+  display: none; }
+
+.location {
+  display: inline-block;
+  margin-bottom: 45px; }
+
+.location-image-container {
+  max-width: 250px;
+  float: left;
+  padding-right: 15px;
+  width: 50%;
+  padding-top: 5px;
+  padding-left: 0px; }
+
+.location-info {
+  float: right;
+  text-align: left;
+  width: 50%; }
+
+.location-info .blue {
+  font-weight: bold; }
+
+.doctors {
+  text-align: center; }
+
+.doctor {
+  width: 47%;
+  padding-right: 1%;
+  padding-left: 1%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center; }
+
+.doctor p.blue {
+  font-size: 13px; }
+
+.doctor-image {
+  float: left;
+  padding-left: 0px;
+  padding-right: 15px;
+  padding-bottom: 25px; }
+
+.page-id-22 .locations {
+  padding-bottom: 3em; }
+.page-id-22 .navigation-icon {
+  display: none; }
+.page-id-22 .need-help {
+  display: none; }
+.page-id-22 .fancy-input {
+  margin-bottom: 3em; }
+.page-id-22 .fancy-button.directions {
+  display: none; }
+.page-id-22 .location-header {
+  display: none; }
+.page-id-22 br {
+  display: none; }
 
 /*********************
 NAVIGATION STYLES

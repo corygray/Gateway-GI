@@ -80,6 +80,7 @@ LINK STYLES
 a, a:visited {
 
 	outline: 0;
+	color: #51B5E8;
 
 
 	/* on hover */
@@ -125,6 +126,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
 	font-size: 2.2em;
 	line-height: 1.0em;
+	letter-spacing: 2px;
 }
 
 h2, .h2 {
@@ -493,8 +495,14 @@ POSTS & CONTENT STYLES
 /* CUSTOM STYLES */
 /****************/
 
+
+
 * {
 	outline: 0;
+}
+
+div#wpadminbar {
+	display: none;
 }
 
 .body {
@@ -550,12 +558,11 @@ p {
 
 .mobile-navigation {
 	background: #232d4f;
-	width: 75%;
+	width: 80%;
 	// display: none;
 
 	.mobile-navigation-container {
-		margin-left:  20%;
-		margin-right: 5%;
+		margin-left:  10%;
 		padding-top: 20px;
 		padding-bottom: 50px;
 
@@ -593,11 +600,16 @@ p {
 		}
 
 		input[type="text"] {
-			width: 95%;
 			margin-top: 5px;
 		}
 	}
 
+}
+
+h2.sub-header {
+	color: #787a73;
+	font-weight: bold;
+	font-size: 22px;
 }
 
 .welcome {
@@ -636,6 +648,10 @@ p {
 
 	h1 {
 		font-weight: bold;
+	}
+
+	p.satisfaction-testimonials {
+		display: none;
 	}
 
 }
@@ -694,6 +710,11 @@ p {
 
 	}
 }
+
+.tablet-desktop-areas  {
+	display: none;
+}
+
 
 .recent-news {
 	margin-left: 13%;
@@ -778,7 +799,11 @@ p {
 }
 
 .lowercase {
-	text-transform: none;
+	text-transform: none !important;
+}
+
+.big {
+	font-size: 25px;
 }
 
 .bold {
@@ -802,6 +827,10 @@ p {
 
 .yellow {
 	background: #f1c309;
+}
+
+.yellow-text {
+	color: #f1c309;
 }
 
 .pointer-cursor {
@@ -858,6 +887,7 @@ p.need-help {
 .blue-button-dropdown {
 	display: none;
 	font-weight: bold;
+	text-align: center;
 
 	li {
 

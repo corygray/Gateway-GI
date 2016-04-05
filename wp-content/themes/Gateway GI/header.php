@@ -32,6 +32,10 @@
         <!-- Google fonts -->
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
+        <!-- jQuery 2.2 CDN for accordion -->
+        <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+        <script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script> 
+
         <link rel="stylesheet" type="text/css" href="/wp-content/themes/Gateway%20GI/library/css/snap.css">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
