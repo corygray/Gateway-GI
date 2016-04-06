@@ -86,6 +86,29 @@
 		        	<a href="#" class="open-left" id="open-left"><img src="/wp-content/themes/Gateway%20GI/library/images/mobile-menu.png" class="mobile-nav-button"/></a>
 
 					<a href="/"><img src="/wp-content/themes/Gateway%20GI/library/images/gatewaygi-logo.png" class="logo"/></a>
+
+					<div class="desktop-secondary-nav">
+
+					<ul class="secondary-desktop-menu">
+
+						<li><a href="/contact">contact us</a></li>
+						<li><a href="/resources">resources</a></li>
+						<li><input type="text" class="fancy-input" placeholder="search"/></li>
+
+					</ul><!-- secondary-desktop-menu -->
+
+
+					</div><!-- desktop-secondary-nav -->
+
+					<div class="desktop-nav">
+					<?php 
+
+						wp_nav_menu( array(
+						    'menu' => 'desktop-menu'
+						) );
+
+					 ?>
+					</div><!-- desktop-nav -->
 					
 				</div><!-- inner-header -->
 

@@ -536,8 +536,16 @@ div#wpadminbar {
 	    display: block;
 	}
 
+	.desktop-secondary-nav {
+		display: none;
+	}
+
+	.desktop-nav {
+		display: none;
+	}
+
 }
-.wrap {width: 100%;}
+.wrap {width: 100% !important;}
 
 
 a {

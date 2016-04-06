@@ -362,9 +362,6 @@ GENERAL STYLES
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-.wrap {
-  width: 760px; }
-
 /*********************
 HEADER STYLES
 *********************/
@@ -430,6 +427,103 @@ NAVIGATION STYLES
       visibility: visible; }
 
 /* end .nav */
+/*******************
+***CUSTOM STYLES****
+*******************/
+h1, .h1 {
+  font-size: 2.8em;
+  line-height: 1.0em;
+  letter-spacing: 3px; }
+
+.header {
+  padding-left: 10%;
+  padding-right: 10%; }
+  .header .mobile-nav-button {
+    display: none; }
+  .header .logo {
+    text-align: left;
+    margin: 0;
+    float: left; }
+  .header .desktop-nav {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    text-align: right; }
+    .header .desktop-nav .menu li {
+      display: inline-block;
+      margin-right: 10px; }
+      .header .desktop-nav .menu li a {
+        color: #7d7d7d;
+        font-size: 13px; }
+    .header .desktop-nav .menu li:last-child {
+      margin-right: 0px; }
+  .header .desktop-secondary-nav {
+    display: block; }
+    .header .desktop-secondary-nav .secondary-desktop-menu {
+      text-align: right; }
+      .header .desktop-secondary-nav .secondary-desktop-menu li {
+        display: inline-block;
+        margin-right: 20px; }
+        .header .desktop-secondary-nav .secondary-desktop-menu li a {
+          font-size: 13px;
+          color: #f1c309;
+          font-weight: bold; }
+        .header .desktop-secondary-nav .secondary-desktop-menu li .fancy-input {
+          border: 1px solid #d9d9d9;
+          margin-bottom: 11px; }
+      .header .desktop-secondary-nav .secondary-desktop-menu li:last-child {
+        margin-right: 0px; }
+
+.page-id-22 .locations-top-right {
+  width: 100%; }
+
+.procedures .content {
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.locations {
+  min-height: 415px; }
+
+.locations-inner {
+  margin-left: 9%;
+  margin-right: 9%; }
+
+.locations-inner.footer {
+  margin-right: 9%;
+  margin-left: 9%; }
+
+.locations-inner.top p {
+  font-size: 20px; }
+
+.locations-top-left {
+  width: 48%;
+  padding-right: 1%;
+  float: left; }
+
+.locations-top-right {
+  width: 48%;
+  padding-left: 1%;
+  float: right; }
+
+.locations-footer .location1 {
+  width: 60%;
+  float: left;
+  margin-bottom: 25px; }
+  .locations-footer .location1 p.white {
+    text-align: left; }
+.locations-footer .location2 {
+  width: 40%;
+  float: right;
+  text-align: right; }
+  .locations-footer .location2 p.white {
+    text-align: right; }
+.locations-footer p.disclaimer {
+  clear: both; }
+.locations-footer p.blue {
+  font-size: 18px; }
+.locations-footer p.white {
+  text-align: center; }
+
 /*********************
 SIDEBARS & ASIDES
 *********************/

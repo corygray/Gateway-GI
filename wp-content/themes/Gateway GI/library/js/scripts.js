@@ -104,13 +104,12 @@ function loadGravatars() {
 	}
 } // end function
 
-/***************************** Body diagram drop down functionality ********/
+/******** Body diagram drop down functionality ********/
 function toggleSomething() {
   $('.toggle').hide();
   $('.area p').addClass('inactive');
   $('.area p').click(function () {
     $('.toggle').slideUp();
-    $(this).toggleClass('inactive');
     $(this).toggleClass('active');
     $(this).parent().find('.toggle').slideDown();
   });

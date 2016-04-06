@@ -98,3 +98,41 @@ p.satisfaction-testimonials {
 		top: 312px;
 	}
 }
+
+.doctor {
+	width: 30%;
+
+	.doctor-image {
+		padding-right: 0px;
+		padding-bottom: 5px;
+	}
+
+	p.blue {
+		font-size: 14px;
+	}
+}
+
+.page-id-15 .doctor-image {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+
+.location-image-container {
+	width: 40%;
+}
+
+.location-info {
+	width: 60%;
+}
+
+
+.locations-inner {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.locations-inner.footer {
+	margin-right: 13%;
+	margin-left: 13%;
+}

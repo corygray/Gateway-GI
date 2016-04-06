@@ -23,9 +23,6 @@ body {}
 LAYOUT & GRID STYLES
 *********************/
 
-.wrap {
-	width: 760px;
-}
 
 /*********************
 HEADER STYLES
@@ -136,6 +133,166 @@ NAVIGATION STYLES
 	}  /* end current highlighters */
 
 } /* end .nav */
+
+
+/*******************
+***CUSTOM STYLES****
+*******************/
+
+h1, .h1 {
+    font-size: 2.8em;
+    line-height: 1.0em;
+    letter-spacing: 3px;
+}
+
+.header {
+	padding-left: 10%;
+	padding-right: 10%;
+
+	.mobile-nav-button {
+		display: none;
+	}
+
+	.logo {
+		text-align: left;
+		margin: 0;
+		float: left;
+	}
+
+	.desktop-nav {
+		display: block;
+		position: relative;
+		padding-left: 25px;
+		text-align: right;
+
+		.menu {
+
+			li {
+				display: inline-block;
+				margin-right: 10px;
+
+				a {
+					color: #7d7d7d;
+					font-size: 13px;
+				}
+			}
+
+			li:last-child {
+				margin-right: 0px;
+			}
+		}
+	}
+
+	.desktop-secondary-nav {
+
+		display: block;
+	
+		.secondary-desktop-menu {
+
+			text-align: right;
+
+			li {
+
+				display: inline-block;
+				margin-right: 20px;
+
+				a {
+					font-size: 13px;
+					color: #f1c309;
+					font-weight: bold;
+				}
+
+				.fancy-input {
+					border: 1px solid #d9d9d9;
+					margin-bottom: 11px;
+				}
+			}
+
+			li:last-child {
+				margin-right: 0px;
+			}
+		}
+	}
+}
+
+.page-id-22 {
+	.locations-top-right {
+		width: 100%;
+	}
+}
+
+.procedures {
+
+	.content {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+.locations {
+	min-height: 415px;
+}
+
+.locations-inner {
+	margin-left: 9%;
+	margin-right: 9%;
+}
+
+.locations-inner.footer {
+	margin-right: 9%;
+	margin-left: 9%;
+}
+
+.locations-inner.top p {
+	font-size: 20px;
+}
+
+.locations-top-left {
+	width: 48%;
+	padding-right: 1%;
+	float: left;
+}
+
+.locations-top-right {
+	width: 48%;
+	padding-left: 1%;
+	float: right;
+}
+
+.locations-footer {
+
+	.location1 {
+		width: 60%;
+		float: left;
+		margin-bottom: 25px;
+
+		p.white {
+			text-align: left;
+		}
+	}
+
+	.location2 {
+		width: 40%;
+		float: right;
+		text-align: right;
+
+		p.white {
+			text-align: right;
+		}
+	}
+
+	p.disclaimer {
+		clear: both;
+	}
+
+	p.blue {
+		font-size: 18px;
+	}
+
+	p.white {
+		text-align: center;
+	}
+}
 
 /*********************
 SIDEBARS & ASIDES
