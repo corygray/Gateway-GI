@@ -635,8 +635,10 @@ h2.sub-header {
     .welcome-bottom {
 	    max-height: 150px;
 	    display: block;
-	    position: absolute;
 	    bottom: 0px;
+	    margin-top: 15px;
+	    padding-left: 10px;
+	    padding-right: 10px;
 
 	    .group-photo {
 	    	width: 100%;

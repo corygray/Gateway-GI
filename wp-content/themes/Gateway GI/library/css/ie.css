@@ -273,7 +273,6 @@ p.white br {
   font-size: 13px; }
 
 .doctor-image {
-  float: left;
   padding-left: 0px;
   padding-right: 15px;
   padding-bottom: 25px; }
@@ -454,7 +453,8 @@ h1, .h1 {
       margin-right: 10px; }
       .header .desktop-nav .menu li a {
         color: #7d7d7d;
-        font-size: 13px; }
+        font-size: 13px;
+        text-transform: uppercase; }
     .header .desktop-nav .menu li:last-child {
       margin-right: 0px; }
   .header .desktop-secondary-nav {
@@ -476,6 +476,16 @@ h1, .h1 {
 
 .page-id-22 .locations-top-right {
   width: 100%; }
+
+.welcome .welcome-bottom {
+  max-height: 150px;
+  display: block;
+  bottom: 0px;
+  margin-top: 15px !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 600px;
+  margin: 0 auto; }
 
 .procedures .content {
   margin-left: 10%;
@@ -581,8 +591,39 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
-.wrap {
-  width: 1040px; }
+.header {
+  padding-left: 13%;
+  padding-right: 13%; }
+  .header .desktop-nav .menu li {
+    margin-right: 20px; }
+    .header .desktop-nav .menu li a {
+      font-size: 13px; }
+  .header .desktop-secondary-nav .secondary-desktop-menu li a {
+    font-size: 13px; }
+
+.welcome .welcome-bottom {
+  position: inherit;
+  max-height: 150px;
+  bottom: 0px;
+  width: 530px;
+  margin: 0 auto;
+  margin-top: 15px; }
+
+.page-content {
+  padding-left: 13%;
+  padding-right: 13%; }
+
+.procedures .content {
+  margin-left: 13%;
+  margin-right: 13%; }
+
+.locations-inner {
+  margin-left: 13%;
+  margin-right: 13%; }
+
+.locations-inner.footer {
+  margin-left: 13%;
+  margin-right: 13%; }
 
 /*
 you can call the larger styles if you want, but there's really no need

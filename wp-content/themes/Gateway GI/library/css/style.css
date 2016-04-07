@@ -1631,8 +1631,10 @@ h2.sub-header {
   .welcome .welcome-bottom {
     max-height: 150px;
     display: block;
-    position: absolute;
-    bottom: 0px; }
+    bottom: 0px;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px; }
     .welcome .welcome-bottom .group-photo {
       width: 100%;
       height: auto; }
@@ -2264,7 +2266,6 @@ tweeners.
     font-size: 13px; }
 
   .doctor-image {
-    float: left;
     padding-left: 0px;
     padding-right: 15px;
     padding-bottom: 25px; }
@@ -2384,31 +2385,38 @@ you can add resource intensive styles.
     .tablet-desktop-areas .liver {
       position: absolute;
       top: 220px;
-      left: 55px; }
+      left: 55px;
+      cursor: pointer; }
     .tablet-desktop-areas .gall-bladder {
       position: absolute;
       top: 257px;
-      left: 5px; }
+      left: 5px;
+      cursor: pointer; }
     .tablet-desktop-areas .large-intestine {
       position: absolute;
       top: 330px;
-      left: 5px; }
+      left: 5px;
+      cursor: pointer; }
     .tablet-desktop-areas .esophagus {
       position: absolute;
       top: 155px;
-      right: 25px; }
+      right: 25px;
+      cursor: pointer; }
     .tablet-desktop-areas .stomach {
       position: absolute;
       top: 219px;
-      right: 20px; }
+      right: 20px;
+      cursor: pointer; }
     .tablet-desktop-areas .pancreas {
       position: absolute;
       top: 262px;
-      right: 90px; }
+      right: 90px;
+      cursor: pointer; }
     .tablet-desktop-areas .small-intestine {
       position: absolute;
       right: 35px;
-      top: 312px; }
+      top: 312px;
+      cursor: pointer; }
 
   .doctor {
     width: 30%; }
@@ -2547,7 +2555,8 @@ you can add resource intensive styles.
         margin-right: 10px; }
         .header .desktop-nav .menu li a {
           color: #7d7d7d;
-          font-size: 13px; }
+          font-size: 13px;
+          text-transform: uppercase; }
       .header .desktop-nav .menu li:last-child {
         margin-right: 0px; }
     .header .desktop-secondary-nav {
@@ -2569,6 +2578,16 @@ you can add resource intensive styles.
 
   .page-id-22 .locations-top-right {
     width: 100%; }
+
+  .welcome .welcome-bottom {
+    max-height: 150px;
+    display: block;
+    bottom: 0px;
+    margin-top: 15px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 600px;
+    margin: 0 auto; }
 
   .procedures .content {
     margin-left: 10%;
@@ -2681,8 +2700,39 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
-  .wrap {
-    width: 1040px; } }
+  .header {
+    padding-left: 13%;
+    padding-right: 13%; }
+    .header .desktop-nav .menu li {
+      margin-right: 20px; }
+      .header .desktop-nav .menu li a {
+        font-size: 13px; }
+    .header .desktop-secondary-nav .secondary-desktop-menu li a {
+      font-size: 13px; }
+
+  .welcome .welcome-bottom {
+    position: inherit;
+    max-height: 150px;
+    bottom: 0px;
+    width: 530px;
+    margin: 0 auto;
+    margin-top: 15px; }
+
+  .page-content {
+    padding-left: 13%;
+    padding-right: 13%; }
+
+  .procedures .content {
+    margin-left: 13%;
+    margin-right: 13%; }
+
+  .locations-inner {
+    margin-left: 13%;
+    margin-right: 13%; }
+
+  .locations-inner.footer {
+    margin-left: 13%;
+    margin-right: 13%; } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.

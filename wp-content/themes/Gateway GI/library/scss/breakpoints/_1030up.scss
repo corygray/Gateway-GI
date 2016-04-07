@@ -9,6 +9,74 @@ be seen on the Desktop.
 
 ******************************************************************/
 
-.wrap {
-  width: 1040px;
+.header {
+
+	padding-left: 13%;
+	padding-right: 13%;
+
+	.desktop-nav {
+
+		.menu {
+
+			li {
+
+				margin-right: 20px;
+
+				a{
+
+					font-size: 13px;
+				}
+			}
+		}
+
+	}
+
+	.desktop-secondary-nav {
+
+		.secondary-desktop-menu {
+
+			li {
+
+				a {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+
+}
+
+.welcome {
+
+	.welcome-bottom {
+		position: inherit;
+		max-height: 150px;
+	    bottom: 0px;
+	    width: 530px;
+	    margin: 0 auto;
+	    margin-top: 15px;
+	}
+}
+
+.page-content {
+	padding-left: 13%;
+	padding-right: 13%;
+}
+
+.procedures {
+
+	.content {
+		margin-left: 13%;
+		margin-right: 13%;
+	}
+}
+
+.locations-inner {
+	margin-left: 13%;
+	margin-right: 13%;
+}
+
+.locations-inner.footer {
+	margin-left: 13%;
+	margin-right: 13%;
 }
