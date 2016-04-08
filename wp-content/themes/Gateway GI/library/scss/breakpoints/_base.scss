@@ -635,10 +635,11 @@ h2.sub-header {
     .welcome-bottom {
 	    max-height: 150px;
 	    display: block;
-	    bottom: 0px;
+	    bottom: -10px;
 	    margin-top: 15px;
 	    padding-left: 10px;
 	    padding-right: 10px;
+	    position: absolute;
 
 	    .group-photo {
 	    	width: 100%;
@@ -734,15 +735,6 @@ h2.sub-header {
 	padding-top: 1.5em;
 	padding-bottom: 2em;
 
-	.news-headline {
-		color: #f1c309;
-		font-size: 20px;
-	}
-
-	.read-more {
-		color: #f1c309;
-	}
-
 	hr {
 		color: #d8cec2;
 		background: #d8cec2;
@@ -750,6 +742,15 @@ h2.sub-header {
 		border: 0px;
 		margin: 50px 0;
 	}
+}
+
+.news-headline {
+	color: #f1c309 !important;
+	font-size: 20px;
+}
+
+.read-more {
+	color: #f1c309;
 }
 
 .locations {
@@ -910,7 +911,6 @@ p.need-help {
 
 .main-content {
 	color: #7d7d7d;
-	font-family: arial;
 }
 
 .location {
@@ -924,6 +924,10 @@ p.need-help {
 	width: 100%;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+.news-post {
+	margin-bottom: 50px;
 }
 
 /* Open icon state override for accordion on FAQ */
@@ -1019,6 +1023,24 @@ p.need-help {
 
 .view-more-button:hover, .read-more-button:hover {
 	color: #FFFFFF !important;
+}
+
+.page-id-24 {
+
+	.excerpt-read-more, .excerpt-read-more:active, .excerpt-read-more:visited {
+		color: #FFFFFF;
+	    text-transform: uppercase;
+	    background: #f1c309;
+	    border-radius: 15px;
+	    padding: 6px 20px;
+	    font-weight: bold;
+	    text-decoration: none;
+	    display: block;
+	    max-width: 142px;
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+
+	}
 }
 
 .fancy-input {

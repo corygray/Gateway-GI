@@ -69,10 +69,6 @@
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
 
-		<script   src="/wp-content/themes/Gateway%20GI/library/js/libs/jquery.js"></script> 
-		 <!-- jQuery UI CDN -->
-        <script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
-
 		<!-- Snap.js -->
         <script type="text/javascript" src="/wp-content/themes/Gateway%20GI/library/js/libs/snap.js"></script>
         <script type="text/javascript" src="/wp-content/themes/Gateway%20GI/library/js/scripts.js"></script>

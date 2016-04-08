@@ -27,6 +27,14 @@ them in here, they won't work.
 /****************/
 
 
+.welcome {
+
+	.welcome-bottom {
+		bottom: -5px;
+		max-height: 175px;
+	}
+}
+
 .page-content {
 	padding-left: 10%;
 	padding-right: 10%;
@@ -109,7 +117,7 @@ p.white br {
 
 
 .location-info {
-	float: right;
+	float: left;
 	text-align: left;
 	width: 50%;
 }

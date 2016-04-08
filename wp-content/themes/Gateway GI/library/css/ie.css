@@ -186,6 +186,10 @@ them in here, they won't work.
 /******************/
 /* CUSTOM STYLES */
 /****************/
+.welcome .welcome-bottom {
+  bottom: -5px;
+  max-height: 175px; }
+
 .page-content {
   padding-left: 10%;
   padding-right: 10%;
@@ -251,7 +255,7 @@ p.white br {
   padding-left: 0px; }
 
 .location-info {
-  float: right;
+  float: left;
   text-align: left;
   width: 50%; }
 
@@ -485,7 +489,8 @@ h1, .h1 {
   padding-left: 10px;
   padding-right: 10px;
   width: 600px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: inherit; }
 
 .procedures .content {
   margin-left: 10%;

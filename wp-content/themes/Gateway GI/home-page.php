@@ -12,7 +12,7 @@ Template Name: Home Page Template
 
 				<h1>Welcome to<br />our Practice</h1>
 
-				<a href="#" class="fancy-button">
+				<a href="/our-doctors" class="fancy-button">
 					Meet Our Doctors
 				</a>
 
@@ -167,17 +167,25 @@ Template Name: Home Page Template
 
 				<h1>Recent News</h1>
 
-				<p><a href="#" class="news-headline">Help Us Prevent Colon Cancer!</a><br />
-				At Gateway we take pride in quality care as well as patient safety. <a href="#" class="read-more">READ MORE</a>
-				</p>
+				<!-- pulls in 5 most recent posts -->
+				<ul>
+				<?php $the_query = new WP_Query( 'posts_per_page=50' ); ?>
 
-				<p><a href="#" class="news-headline">In-Office Anorectal Manometry</a><br />
-				We now offer in-office anorectal manometry to assess for pelvic floor dysfunction, dyssenergic defecation, bowel urgency, incontinence, etc. <a href="#" class="read-more">READ MORE</a></p>
+				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+				<div class="news-post">	
 
-				<p><a href="#" class="news-headline">Gateway Gastroenterology In Honduras</a><br />
-				This spring marks Dr. Jeffrey Mathews third medical mission to Honduras. <a href="#" class="read-more">READ MORE</a></p>
-				<br /><br />
-				<a href="#" class="view-more-button">View More</a>
+					<li><a href="<?php the_permalink() ?>" class="news-headline"><?php the_title(); ?></a></li>
+
+					<li><?php the_excerpt(__('(more…)')); ?></li>
+				</div><!-- news-post -->
+
+				<?php 
+				endwhile;
+				wp_reset_postdata();
+				?>
+				</ul>
+
+				<a href="/news" class="view-more-button">View More</a>
 
 				<hr />
 

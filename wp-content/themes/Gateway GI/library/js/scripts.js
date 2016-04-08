@@ -109,11 +109,24 @@ function toggleSomething() {
   $('.toggle').hide();
   $('.area p').addClass('inactive');
   $('.area p').click(function () {
-    $('.toggle').slideUp();
-    $(this).toggleClass('active');
-    $(this).parent().find('.toggle').slideDown();
+    $('.area').removeClass('active-area');
+    if($(this).hasClass('inactive')) {
+       $('.toggle').hide();
+       $('.area p').removeClass('active');
+       $('.area p').addClass('inactive');
+       $(this).removeClass('inactive');
+       $(this).addClass('active');
+       $(this).parent().find('.toggle').slideDown();
+     } else {
+       if($(this).hasClass('active')) {
+         $('.area p').removeClass('active');
+         $('.area p').addClass('inactive');
+       }
+     }
+    $(this).parent().addClass('active-area');
   });
 }
+
 
 /****************************** INITIATE SNAP.JS ******************************/
   function initSnap() {
@@ -148,8 +161,12 @@ jQuery(document).ready(function($) {
    * You can remove this if you don't need it
   */
   loadGravatars();
-  initSnap();
   toggleSomething();
+
+  viewport = updateViewportDimensions();
+  if (viewport.width <= 960) {
+      initSnap();
+  }
 
 
 }); /* end of as page load scripts */

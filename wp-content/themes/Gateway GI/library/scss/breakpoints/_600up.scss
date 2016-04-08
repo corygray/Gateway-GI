@@ -33,13 +33,16 @@ p.satisfaction-testimonials {
 		background-size: 300px;
 		background-position: bottom center;
 		background-repeat: no-repeat;
-		width: 500px; /* Since we're absolute positioning child elements, we will need to set a width and height, but we would probably need to do this anyway for the background image */
+		width: 500px; 
 		height: 435px;
 		margin: 0 auto;
 		position: relative;
 	}
 
 	.area {
+		z-index: 1;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	.area p {
@@ -47,62 +50,106 @@ p.satisfaction-testimonials {
 		color: #51b5e6;
 	}
 
-	.area .active {
-		z-index: 9999;
+
+
+	.active-area {
+
+		p.inactive {
+
+		}
 	}
+	
 
 	.area p.inactive {
 		color: #51b5e6;
 		font-weight: bold;
+		margin-top: 7px;
+    	margin-bottom: 0px;
+	}
+
+	.toggle {
+
+		text-align: left;
+
+		ul {
+			margin-top: 5px;
+		}
+
+	}
+
+	.active-area {
+		z-index: 9999;
+		background: #51b5e6;
+		border-radius: 5px;
+
+		p {
+			color: #FFFFFF !important;
+			text-decoration: underline;
+
+		}
+
+		ul {
+
+			li {
+				color: #FFFFFF;
+
+			}
+		}
 	}
 
 	.liver {
 	  position: absolute;
-	  top: 220px;
-	  left: 55px;
+	  top: 229px;
+	  left: 45px;
 	  cursor: pointer;
+
 	}
 
 	.gall-bladder {
 		position: absolute;
-		top: 257px;
-    	left: 5px;
+		top: 265px;
+    	left: -2px;
     	cursor: pointer;
+
 	}
 
 	.large-intestine {
 		position: absolute;
-		top: 330px;
-		left: 5px;
+		top: 339px;
+		left: -4px;
 		cursor: pointer;
+
 	}
 
 	.esophagus {
-	  position: absolute;
-	  top: 155px;
-	  right: 25px;
-	  cursor: pointer;
+		position: absolute;
+		top: 163px;
+    	right: 15px;
+	  	cursor: pointer;
 	}
 
 	.stomach {
-	  position: absolute;
-	  top: 219px;
-	  right: 20px;
-	  cursor: pointer;
+		position: absolute;
+		top: 228px;
+	    right: 11px;
+	  	cursor: pointer;
+
 	}
 
 	.pancreas {
 	  position: absolute;
-	  top: 262px;
-	  right: 90px;
+	  top: 270px;
+	  right: 78px;
 	  cursor: pointer;
+
 	}
 
 	.small-intestine {
 		position: absolute;
-		right: 35px;
-		top: 312px;
+		right: 24px;
+		top: 321px;
 		cursor: pointer;
+
 	}
 }
 

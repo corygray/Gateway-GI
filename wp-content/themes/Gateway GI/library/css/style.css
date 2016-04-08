@@ -1631,10 +1631,11 @@ h2.sub-header {
   .welcome .welcome-bottom {
     max-height: 150px;
     display: block;
-    bottom: 0px;
+    bottom: -10px;
     margin-top: 15px;
     padding-left: 10px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    position: absolute; }
     .welcome .welcome-bottom .group-photo {
       width: 100%;
       height: auto; }
@@ -1698,17 +1699,19 @@ h2.sub-header {
   text-align: left;
   padding-top: 1.5em;
   padding-bottom: 2em; }
-  .recent-news .news-headline {
-    color: #f1c309;
-    font-size: 20px; }
-  .recent-news .read-more {
-    color: #f1c309; }
   .recent-news hr {
     color: #d8cec2;
     background: #d8cec2;
     height: 2px;
     border: 0px;
     margin: 50px 0; }
+
+.news-headline {
+  color: #f1c309 !important;
+  font-size: 20px; }
+
+.read-more {
+  color: #f1c309; }
 
 .locations {
   background: url("../images/blue-map.png");
@@ -1825,8 +1828,7 @@ p.need-help {
     color: #232d4f; }
 
 .main-content {
-  color: #7d7d7d;
-  font-family: arial; }
+  color: #7d7d7d; }
 
 .location {
   margin-bottom: 25px; }
@@ -1837,6 +1839,9 @@ p.need-help {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px; }
+
+.news-post {
+  margin-bottom: 50px; }
 
 /* Open icon state override for accordion on FAQ */
 .ui-icon-circle-arrow-s {
@@ -1916,6 +1921,19 @@ p.need-help {
 
 .view-more-button:hover, .read-more-button:hover {
   color: #FFFFFF !important; }
+
+.page-id-24 .excerpt-read-more, .page-id-24 .excerpt-read-more:active, .page-id-24 .excerpt-read-more:visited {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background: #f1c309;
+  border-radius: 15px;
+  padding: 6px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  max-width: 142px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .fancy-input {
   height: 32px !important;
@@ -2179,6 +2197,10 @@ tweeners.
   /******************/
   /* CUSTOM STYLES */
   /****************/
+  .welcome .welcome-bottom {
+    bottom: -5px;
+    max-height: 175px; }
+
   .page-content {
     padding-left: 10%;
     padding-right: 10%;
@@ -2244,7 +2266,7 @@ tweeners.
     padding-left: 0px; }
 
   .location-info {
-    float: right;
+    float: left;
     text-align: left;
     width: 50%; }
 
@@ -2370,52 +2392,68 @@ you can add resource intensive styles.
       background-position: bottom center;
       background-repeat: no-repeat;
       width: 500px;
-      /* Since we're absolute positioning child elements, we will need to set a width and height, but we would probably need to do this anyway for the background image */
       height: 435px;
       margin: 0 auto;
       position: relative; }
+    .tablet-desktop-areas .area {
+      z-index: 1;
+      padding-left: 10px;
+      padding-right: 10px; }
     .tablet-desktop-areas .area p {
       font-size: 16px;
       color: #51b5e6; }
-    .tablet-desktop-areas .area .active {
-      z-index: 9999; }
     .tablet-desktop-areas .area p.inactive {
       color: #51b5e6;
-      font-weight: bold; }
+      font-weight: bold;
+      margin-top: 7px;
+      margin-bottom: 0px; }
+    .tablet-desktop-areas .toggle {
+      text-align: left; }
+      .tablet-desktop-areas .toggle ul {
+        margin-top: 5px; }
+    .tablet-desktop-areas .active-area {
+      z-index: 9999;
+      background: #51b5e6;
+      border-radius: 5px; }
+      .tablet-desktop-areas .active-area p {
+        color: #FFFFFF !important;
+        text-decoration: underline; }
+      .tablet-desktop-areas .active-area ul li {
+        color: #FFFFFF; }
     .tablet-desktop-areas .liver {
       position: absolute;
-      top: 220px;
-      left: 55px;
+      top: 229px;
+      left: 45px;
       cursor: pointer; }
     .tablet-desktop-areas .gall-bladder {
       position: absolute;
-      top: 257px;
-      left: 5px;
+      top: 265px;
+      left: -2px;
       cursor: pointer; }
     .tablet-desktop-areas .large-intestine {
       position: absolute;
-      top: 330px;
-      left: 5px;
+      top: 339px;
+      left: -4px;
       cursor: pointer; }
     .tablet-desktop-areas .esophagus {
       position: absolute;
-      top: 155px;
-      right: 25px;
+      top: 163px;
+      right: 15px;
       cursor: pointer; }
     .tablet-desktop-areas .stomach {
       position: absolute;
-      top: 219px;
-      right: 20px;
+      top: 228px;
+      right: 11px;
       cursor: pointer; }
     .tablet-desktop-areas .pancreas {
       position: absolute;
-      top: 262px;
-      right: 90px;
+      top: 270px;
+      right: 78px;
       cursor: pointer; }
     .tablet-desktop-areas .small-intestine {
       position: absolute;
-      right: 35px;
-      top: 312px;
+      right: 24px;
+      top: 321px;
       cursor: pointer; }
 
   .doctor {
@@ -2587,7 +2625,8 @@ you can add resource intensive styles.
     padding-left: 10px;
     padding-right: 10px;
     width: 600px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: inherit; }
 
   .procedures .content {
     margin-left: 10%;
