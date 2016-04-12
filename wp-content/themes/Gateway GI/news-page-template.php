@@ -13,24 +13,34 @@ Template Name: News Page Template
 		<div id="inner-content" class="wrap cf main-content">
 
 			<div class="page-content">
-			<h1>News</h1>
 
-				<ul>
-				<?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
+				<div class="sidebar-left">
+					<?php the_widget('WP_Widget_Accordion_Archives'); ?>
+				</div><!-- left -->
 
-				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+				<div class="content-right">
+					<h1>News</h1>
 
-				<div class="news-post">
-					<li><a href="<?php the_permalink() ?>" class="news-headline"><?php the_title(); ?></a></li>
+						<ul>
+							<?php $the_query = new WP_Query( 'posts_per_page=50' ); ?>
 
-					<li><?php the_excerpt(__('(more…)')); ?></li>
-				</div> <!-- news-post -->
+							<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 
-				<?php 
-				endwhile;
-				wp_reset_postdata();
-				?>
-				</ul>
+							<div class="news-post">
+								<li><span class="post-date"><?php the_date(); ?></span></li>
+								<li><a href="<?php the_permalink() ?>" class="news-headline"><?php the_title(); ?></a></li>
+
+								<li><?php the_excerpt(__('(more…)')); ?></li>
+							</div> <!-- news-post -->
+
+							<?php 
+								endwhile;
+								wp_reset_postdata();
+							?>
+						</ul>
+				</div> <!-- right -->
+
+				<div class="clear"></div>
 
 			</div><!-- page-content -->
 

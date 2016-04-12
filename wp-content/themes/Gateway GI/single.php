@@ -1,10 +1,16 @@
+<!-- removes automatically generated p tags in goofy places -->
+<?php remove_filter ('the_content', 'wpautop'); ?>
+
 <?php get_header(); ?>
 
-			<div id="content">
+	<div id="content">
 
-				<div id="inner-content" class="wrap cf">
+		<div id="inner-content" class="wrap cf main-content">
 
-					<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+			<div class="page-content">
+
+			<h1>News</h1>
+
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -43,12 +49,12 @@
 
 						<?php endif; ?>
 
-					</main>
+				<div class="clear"></div>
 
-					<?php get_sidebar(); ?>
+			</div><!-- page-content -->
 
-				</div>
+		</div><!-- inner-content -->
 
-			</div>
+	</div><!-- content -->
 
 <?php get_footer(); ?>

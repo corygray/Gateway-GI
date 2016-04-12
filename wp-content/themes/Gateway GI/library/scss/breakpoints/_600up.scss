@@ -1,3 +1,11 @@
+.welcome {
+
+	h1 {
+		padding-left: 26%;
+		padding-right: 26%;
+	}
+}
+
 .text-blurb h1 {
 	font-weight: normal;
 }
@@ -6,13 +14,45 @@ p.satisfaction-testimonials {
 	display: block !important;
     border-top: 2px solid #51b5e6;
     border-bottom: 2px solid #51b5e6;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: #232d4f;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 9px;
+    line-height: 25px;
+}
 
+
+
+.patient-satisfaction {
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+.ninety-nine {
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+
+.patient-testimonials {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.yellow-arrow {
+	display: table-cell;
+	vertical-align: middle;
+
+	img {
+		margin-top: 7px;
+	    height: 13px;
+	    width: 13px;
+	    margin-left: 5px;
+	}
 }
 
 

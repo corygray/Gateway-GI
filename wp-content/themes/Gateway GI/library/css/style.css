@@ -1551,13 +1551,13 @@ div#wpadminbar {
   padding-left: 15%;
   padding-right: 15%;
   text-align: center;
-  padding-bottom: 1em;
-  border-top: 8px solid #f1c309; }
+  padding-bottom: 1em; }
   .page-content p {
     font-size: 14px; }
 
 .header {
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  border-bottom: 8px solid #f1c309; }
   .header .logo {
     max-width: 175px;
     height: auto;
@@ -1626,6 +1626,9 @@ h2.sub-header {
   position: relative;
   overflow: hidden;
   text-align: center; }
+  .welcome h1 {
+    padding-left: 10%;
+    padding-right: 10%; }
   .welcome .fancy-button {
     margin-bottom: 5px; }
   .welcome .welcome-bottom {
@@ -1708,7 +1711,8 @@ h2.sub-header {
 
 .news-headline {
   color: #f1c309 !important;
-  font-size: 20px; }
+  font-size: 20px;
+  font-weight: bold; }
 
 .read-more {
   color: #f1c309; }
@@ -1843,6 +1847,10 @@ p.need-help {
 .news-post {
   margin-bottom: 50px; }
 
+.post-date {
+  text-transform: uppercase;
+  font-weight: bold; }
+
 /* Open icon state override for accordion on FAQ */
 .ui-icon-circle-arrow-s {
   background-image: url("../images/arrow-open.png") !important;
@@ -1921,6 +1929,9 @@ p.need-help {
 
 .view-more-button:hover, .read-more-button:hover {
   color: #FFFFFF !important; }
+
+.page-id-6 .header {
+  border-bottom: 0px; }
 
 .page-id-24 .excerpt-read-more, .page-id-24 .excerpt-read-more:active, .page-id-24 .excerpt-read-more:visited {
   color: #FFFFFF;
@@ -2197,6 +2208,9 @@ tweeners.
   /******************/
   /* CUSTOM STYLES */
   /****************/
+  .welcome h1 {
+    padding-left: 15%;
+    padding-right: 15%; }
   .welcome .welcome-bottom {
     bottom: -5px;
     max-height: 175px; }
@@ -2364,6 +2378,10 @@ in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 600px) {
+  .welcome h1 {
+    padding-left: 26%;
+    padding-right: 26%; }
+
   .text-blurb h1 {
     font-weight: normal; }
 
@@ -2371,12 +2389,36 @@ you can add resource intensive styles.
     display: block !important;
     border-top: 2px solid #51b5e6;
     border-bottom: 2px solid #51b5e6;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: #232d4f;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 9px; }
+    font-size: 9px;
+    line-height: 25px; }
+
+  .patient-satisfaction {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 5px; }
+
+  .ninety-nine {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 5px; }
+
+  .patient-testimonials {
+    display: table-cell;
+    vertical-align: middle; }
+
+  .yellow-arrow {
+    display: table-cell;
+    vertical-align: middle; }
+    .yellow-arrow img {
+      margin-top: 7px;
+      height: 13px;
+      width: 13px;
+      margin-left: 5px; }
 
   .procedures {
     padding-bottom: 65px; }
@@ -2628,6 +2670,17 @@ you can add resource intensive styles.
     margin: 0 auto;
     position: inherit; }
 
+  .patient-satisfaction {
+    font-size: 12px;
+    padding-right: 7px; }
+
+  .ninety-nine {
+    font-size: 30px;
+    padding-right: 7px; }
+
+  .patient-testimonials {
+    font-size: 12px; }
+
   .procedures .content {
     margin-left: 10%;
     margin-right: 10%; }
@@ -2753,13 +2806,53 @@ you can add resource intensive styles.
     position: inherit;
     max-height: 150px;
     bottom: 0px;
-    width: 530px;
+    width: inherit;
+    max-width: 550px;
     margin: 0 auto;
     margin-top: 15px; }
+
+  p.satisfaction-testimonials {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+  .patient-satisfaction {
+    font-size: 16px;
+    padding-right: 10px; }
+
+  .ninety-nine {
+    font-size: 35px;
+    padding-right: 10px; }
+
+  .patient-testimonials {
+    font-size: 16px; }
+
+  .yellow-arrow img {
+    height: 15px;
+    width: 15px;
+    margin-top: 8px; }
 
   .page-content {
     padding-left: 13%;
     padding-right: 13%; }
+
+  .sidebar-left {
+    width: 26%;
+    float: left;
+    padding-right: 4%;
+    margin-top: 4.5em; }
+
+  .content-right {
+    width: 70%;
+    float: left; }
+
+  .accordion-archives {
+    margin-left: 1%; }
+
+  .archive-accordion-month a {
+    color: #003663; }
+
+  .page-id-24 h2.widgettitle {
+    display: none; }
 
   .procedures .content {
     margin-left: 13%;
@@ -2771,7 +2864,12 @@ you can add resource intensive styles.
 
   .locations-inner.footer {
     margin-left: 13%;
-    margin-right: 13%; } }
+    margin-right: 13%; }
+
+  .doctors {
+    text-align: left; }
+    .doctors .doctor {
+      width: inherit; } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -2786,7 +2884,82 @@ This is for the larger monitors and possibly full screen viewers.
   You can add some advanced styles here if you like. This kicks in
   on larger screens.
   
-  ******************************************************************/ }
+  ******************************************************************/
+  .header {
+    border-bottom: 8px solid #f1c309; }
+    .header #inner-header {
+      max-width: 1030px;
+      margin: 0 auto; }
+    .header .desktop-nav .menu li {
+      margin-right: 30px; }
+      .header .desktop-nav .menu li a {
+        font-size: 15px; }
+
+  .welcome .welcome-bottom {
+    max-height: 225px;
+    width: inherit;
+    min-width: 620px; }
+
+  .clear {
+    clear: both; }
+
+  .recent-news .left-major {
+    float: left;
+    width: 60%;
+    border-right: 2px solid #d8cec2;
+    padding-right: 40px; }
+  .recent-news .right-major {
+    float: left;
+    width: 40%;
+    padding-left: 40px;
+    margin-top: 25%; }
+    .recent-news .right-major .left {
+      display: block;
+      width: 100%;
+      border-right: 0px;
+      text-align: center;
+      padding-right: 0px; }
+    .recent-news .right-major .right {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding-left: 0px; }
+  .recent-news hr {
+    display: none; }
+
+  .text-blurb {
+    max-width: 1030px;
+    margin: 0 auto; }
+
+  .patient-satisfaction {
+    font-size: 19px; }
+
+  .ninety-nine {
+    font-size: 38px; }
+
+  .patient-testimonials {
+    font-size: 19px; }
+
+  .page-content {
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0px; }
+
+  .procedures .content {
+    max-width: 1030px;
+    margin: 0 auto; }
+
+  .recent-news {
+    max-width: 1030px;
+    margin: 0 auto; }
+
+  .locations-inner {
+    max-width: 1030px;
+    margin: 0 auto; }
+
+  .locations-inner.footer {
+    max-width: 1030px;
+    margin: 0 auto; } }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with

@@ -9,3 +9,124 @@ on larger screens.
 
 ******************************************************************/
 
+
+
+.header {
+
+	border-bottom: 8px solid #f1c309;
+
+	#inner-header {
+		max-width: 1030px;
+		margin: 0 auto;
+	}
+
+	.desktop-nav {
+
+		.menu {
+
+			li {
+				margin-right: 30px;
+
+				a {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+}
+
+
+.welcome {
+
+	.welcome-bottom{
+		max-height: 225px;
+		width: inherit;
+		min-width: 620px;
+	}
+}
+
+.clear {
+	clear: both;
+}
+
+.recent-news {
+
+	.left-major {
+		float: left;
+		width: 60%;
+		border-right: 2px solid #d8cec2;
+		padding-right: 40px;
+	}
+
+	.right-major {
+		float: left;
+		width: 40%;
+		padding-left: 40px;
+		margin-top: 25%;
+
+		.left {
+			display: block;
+			width: 100%;
+			border-right: 0px;
+			text-align: center;
+			padding-right: 0px;
+		}
+
+		.right {
+			display: block;
+			width: 100%;
+			text-align: center;
+			padding-left: 0px;
+		}
+	}
+
+	hr {
+		display: none;
+	}
+
+}
+
+.text-blurb {
+	max-width: 1030px; 
+	margin: 0 auto;
+}
+
+.patient-satisfaction {
+	font-size: 19px;
+}
+
+.ninety-nine {
+	font-size: 38px;
+}
+
+.patient-testimonials {
+	font-size: 19px;
+}
+
+.page-content {
+	max-width: 1030px;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+.procedures .content {
+	max-width: 1030px; 
+	margin: 0 auto;
+
+}
+
+.recent-news {
+	max-width: 1030px; 
+	margin: 0 auto;
+}
+
+.locations-inner {
+	max-width: 1030px; 
+	margin: 0 auto;
+}
+
+.locations-inner.footer {
+	max-width: 1030px; 
+	margin: 0 auto;
+}

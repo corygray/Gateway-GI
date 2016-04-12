@@ -518,7 +518,6 @@ div#wpadminbar {
 	padding-right: 15%;
 	text-align: center;
 	padding-bottom: 1em;
-	border-top: 8px solid #f1c309;
 
 	p {
 		font-size: 14px;
@@ -527,6 +526,7 @@ div#wpadminbar {
 
 .header {
 	background: #FFFFFF;
+	border-bottom: 8px solid #f1c309;
 
 	.logo {
 		max-width: 175px;
@@ -545,7 +545,9 @@ div#wpadminbar {
 	}
 
 }
-.wrap {width: 100% !important;}
+.wrap {
+	width: 100% !important;
+}
 
 
 a {
@@ -627,6 +629,11 @@ h2.sub-header {
     position: relative;
     overflow: hidden;
     text-align: center;
+
+    h1 {
+    	padding-left: 10%;
+    	padding-right: 10%;
+    }
 
     .fancy-button {
     	margin-bottom: 5px;
@@ -747,6 +754,7 @@ h2.sub-header {
 .news-headline {
 	color: #f1c309 !important;
 	font-size: 20px;
+	font-weight: bold;
 }
 
 .read-more {
@@ -930,6 +938,11 @@ p.need-help {
 	margin-bottom: 50px;
 }
 
+.post-date {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
 /* Open icon state override for accordion on FAQ */
 
 .ui-icon-circle-arrow-s {
@@ -1023,6 +1036,12 @@ p.need-help {
 
 .view-more-button:hover, .read-more-button:hover {
 	color: #FFFFFF !important;
+}
+
+.page-id-6 {
+	.header {
+		border-bottom: 0px;
+	}
 }
 
 .page-id-24 {

@@ -1,10 +1,15 @@
+<!-- removes automatically generated p tags in goofy places -->
+<?php remove_filter ('the_content', 'wpautop'); ?>
+
 <?php get_header(); ?>
 
-			<div id="content">
+	<div id="content">
 
-				<div id="inner-content" class="wrap cf">
+		<div id="inner-content" class="wrap cf main-content">
 
-						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+			<div class="page-content">
+
+			<h1>News</h1>
 
 							<?php
 							the_archive_title( '<h1 class="page-title">', '</h1>' );
@@ -37,9 +42,6 @@
 
 								</section>
 
-								<footer class="article-footer">
-
-								</footer>
 
 							</article>
 
@@ -63,12 +65,15 @@
 
 							<?php endif; ?>
 
-						</main>
 
-					<?php get_sidebar(); ?>
 
-				</div>
 
-			</div>
+				<div class="clear"></div>
+
+			</div><!-- page-content -->
+
+		</div><!-- inner-content -->
+
+	</div><!-- content -->
 
 <?php get_footer(); ?>

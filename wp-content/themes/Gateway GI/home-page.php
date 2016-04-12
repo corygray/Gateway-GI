@@ -10,7 +10,7 @@ Template Name: Home Page Template
 
 			<div class="welcome">
 
-				<h1>Welcome to<br />our Practice</h1>
+				<h1>Welcome to our Practice</h1>
 
 				<a href="/our-doctors" class="fancy-button">
 					Meet Our Doctors
@@ -27,7 +27,12 @@ Template Name: Home Page Template
 				<h1>A Better Way - Gateway</h1>
 				<p class="main-content">Gateway Gastroenterology is a group of eight board certified gastroenterologists. Our goal is to is to provide outstanding care in a timely, courteous, and professional manner. Our mission is to aid in improving your digestive health and also to be a resource to your primary care physician in caring for you. All of our physicians are committed to ongoing education and will make every effort to provide you with the most up to date and thorough care possible. We offer a wide variety of gastroenterology services including inpatient and outpatient consultation as well as a broad range of endoscopic procedures including upper endoscopy and colonoscopy.</p>
 
-				<p class="satisfaction-testimonials uppercase">Our patient satisfaction score is <span class="big blue">99%*</span> <span class="yellow-text">Read our patient testimonials</span> > </p>
+				<p class="satisfaction-testimonials uppercase" align="center">
+					<span class="patient-satisfaction">Our patient satisfaction score is</span>
+					<span class="big blue ninety-nine">99%*</span> 
+					<span class="yellow-text patient-testimonials">Read our patient testimonials</span>
+					<span class="yellow-arrow"><img src="/wp-content/themes/Gateway%20GI/library/images/yellow-arrow.jpg"></span>
+				</p>
 
 			</div><!-- text-blurb -->
 
@@ -165,31 +170,33 @@ Template Name: Home Page Template
 
 			<div class="recent-news">
 
-				<h1>Recent News</h1>
+				<div class="left-major">
+					<h1>Recent News</h1>
 
-				<!-- pulls in 5 most recent posts -->
-				<ul>
-				<?php $the_query = new WP_Query( 'posts_per_page=50' ); ?>
+					<!-- pulls in 5 most recent posts -->
+					<ul>
+					<?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
 
-				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-				<div class="news-post">	
+					<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+					<div class="news-post">	
 
-					<li><a href="<?php the_permalink() ?>" class="news-headline"><?php the_title(); ?></a></li>
+						<li><a href="<?php the_permalink() ?>" class="news-headline"><?php the_title(); ?></a></li>
 
-					<li><?php the_excerpt(__('(more…)')); ?></li>
-				</div><!-- news-post -->
+						<li><?php the_excerpt(__('(more…)'), 0,2); ?></li>
+					</div><!-- news-post -->
 
-				<?php 
-				endwhile;
-				wp_reset_postdata();
-				?>
-				</ul>
+					<?php 
+					endwhile;
+					wp_reset_postdata();
+					?>
+					</ul>
 
-				<a href="/news" class="view-more-button">View More</a>
+					<a href="/news" class="view-more-button">View More</a>
 
-				<hr />
+					<hr />
+				</div>
 
-				<div style="text-align: center;font-weight: bold;">
+				<div style="text-align: center;font-weight: bold;" class="right-major">
 
 					<div class="left fifty-percent">
 						<p class="dark-blue" style="margin-top: .2em; margin-bottom: .2em;">Colon Cancer Screening</p>
@@ -205,6 +212,8 @@ Template Name: Home Page Template
 					</div>
 
 				</div> <!-- text align center div -->
+
+				<div class="clear"></div>
 
 			</div> <!--recent-news -->
 

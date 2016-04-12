@@ -186,6 +186,9 @@ them in here, they won't work.
 /******************/
 /* CUSTOM STYLES */
 /****************/
+.welcome h1 {
+  padding-left: 15%;
+  padding-right: 15%; }
 .welcome .welcome-bottom {
   bottom: -5px;
   max-height: 175px; }
@@ -492,6 +495,17 @@ h1, .h1 {
   margin: 0 auto;
   position: inherit; }
 
+.patient-satisfaction {
+  font-size: 12px;
+  padding-right: 7px; }
+
+.ninety-nine {
+  font-size: 30px;
+  padding-right: 7px; }
+
+.patient-testimonials {
+  font-size: 12px; }
+
 .procedures .content {
   margin-left: 10%;
   margin-right: 10%; }
@@ -610,13 +624,53 @@ be seen on the Desktop.
   position: inherit;
   max-height: 150px;
   bottom: 0px;
-  width: 530px;
+  width: inherit;
+  max-width: 550px;
   margin: 0 auto;
   margin-top: 15px; }
+
+p.satisfaction-testimonials {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.patient-satisfaction {
+  font-size: 16px;
+  padding-right: 10px; }
+
+.ninety-nine {
+  font-size: 35px;
+  padding-right: 10px; }
+
+.patient-testimonials {
+  font-size: 16px; }
+
+.yellow-arrow img {
+  height: 15px;
+  width: 15px;
+  margin-top: 8px; }
 
 .page-content {
   padding-left: 13%;
   padding-right: 13%; }
+
+.sidebar-left {
+  width: 26%;
+  float: left;
+  padding-right: 4%;
+  margin-top: 4.5em; }
+
+.content-right {
+  width: 70%;
+  float: left; }
+
+.accordion-archives {
+  margin-left: 1%; }
+
+.archive-accordion-month a {
+  color: #003663; }
+
+.page-id-24 h2.widgettitle {
+  display: none; }
 
 .procedures .content {
   margin-left: 13%;
@@ -629,6 +683,11 @@ be seen on the Desktop.
 .locations-inner.footer {
   margin-left: 13%;
   margin-right: 13%; }
+
+.doctors {
+  text-align: left; }
+  .doctors .doctor {
+    width: inherit; }
 
 /*
 you can call the larger styles if you want, but there's really no need
