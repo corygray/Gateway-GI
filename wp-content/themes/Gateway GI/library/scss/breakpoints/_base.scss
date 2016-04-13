@@ -622,6 +622,10 @@ h2.sub-header {
 	font-size: 22px;
 }
 
+.widgettitle {
+  display: none;
+}
+
 .welcome {
     background-image: url('../images/blue-bg.png');
     min-height: 340px;
@@ -755,6 +759,7 @@ h2.sub-header {
 	color: #f1c309 !important;
 	font-size: 20px;
 	font-weight: bold;
+  margin-bottom: 14px;
 }
 
 .read-more {
@@ -941,6 +946,7 @@ p.need-help {
 .post-date {
 	text-transform: uppercase;
 	font-weight: bold;
+  margin-bottom: 14px;
 }
 
 /* Open icon state override for accordion on FAQ */
@@ -1034,6 +1040,22 @@ p.need-help {
 	text-decoration: none;
 }
 
+.previous {
+  margin-right: 10px;
+}
+
+.next {
+
+}
+
+.previous, .next {
+  display: block;
+  float: left;
+  min-width: 125px;
+  text-align: center;
+  padding: 3px 20px;
+}
+
 .view-more-button:hover, .read-more-button:hover {
 	color: #FFFFFF !important;
 }
@@ -1051,7 +1073,7 @@ p.need-help {
 	    text-transform: uppercase;
 	    background: #f1c309;
 	    border-radius: 15px;
-	    padding: 6px 20px;
+	    padding: 5px 20px;
 	    font-weight: bold;
 	    text-decoration: none;
 	    display: block;

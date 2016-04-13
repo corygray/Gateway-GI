@@ -30,7 +30,8 @@
             <meta name="theme-color" content="#121212">
        
         <!-- Google fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/
+		css">
 
         <!-- jQuery 2.2 CDN for accordion -->
         <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>

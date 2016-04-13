@@ -9,8 +9,6 @@
 
 			<div class="page-content">
 
-			<h1>News</h1>
-
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

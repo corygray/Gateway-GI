@@ -613,12 +613,6 @@ be seen on the Desktop.
 .header {
   padding-left: 13%;
   padding-right: 13%; }
-  .header .desktop-nav .menu li {
-    margin-right: 20px; }
-    .header .desktop-nav .menu li a {
-      font-size: 13px; }
-  .header .desktop-secondary-nav .secondary-desktop-menu li a {
-    font-size: 13px; }
 
 .welcome .welcome-bottom {
   position: inherit;
@@ -651,7 +645,8 @@ p.satisfaction-testimonials {
 
 .page-content {
   padding-left: 13%;
-  padding-right: 13%; }
+  padding-right: 13%;
+  padding-bottom: 30px !important; }
 
 .sidebar-left {
   width: 26%;

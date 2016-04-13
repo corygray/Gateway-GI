@@ -846,6 +846,49 @@ We can break them up as much as we want or just keep them all in one.
 I mean, you can do whatever you want. The world is your oyster. Unless
 you hate oysters, then the world is your peanut butter & jelly sandwich.
 *********************/
+/************************/
+/* DESKTOP MENU STYLES  /
+/**********************/
+@media only screen and (min-width: 768px) {
+  .desktop-nav .menu li {
+    margin-right: 20px; }
+    .desktop-nav .menu li a {
+      font-size: 13px;
+      padding-bottom: 7px; }
+    .desktop-nav .menu li a:hover {
+      color: #f1c309 !important;
+      text-decoration: underline; }
+
+  .desktop-secondary-nav .secondary-desktop-menu li a {
+    font-size: 13px; }
+
+  .menu-item-has-children {
+    position: relative; }
+
+  .menu-item-has-children:hover > ul.sub-menu {
+    left: 0px;
+    top: 12px; }
+
+  ul.sub-menu {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    background: #232d4f;
+    padding: 2px 7px; }
+    ul.sub-menu li {
+      margin-right: 0px !important;
+      float: left;
+      padding: 5px;
+      border-bottom: 1px solid #576db9;
+      text-align: left; }
+      ul.sub-menu li a {
+        color: #FFFFFF !important;
+        font-size: 14px !important; }
+      ul.sub-menu li a:hover {
+        color: #f1c309 !important;
+        text-decoration: none !important; }
+    ul.sub-menu li:last-child {
+      border-bottom: 0px; } }
 /******************************************************************
 Site Name:
 Author:
@@ -1619,6 +1662,9 @@ h2.sub-header {
   font-weight: bold;
   font-size: 22px; }
 
+.widgettitle {
+  display: none; }
+
 .welcome {
   background-image: url("../images/blue-bg.png");
   min-height: 340px;
@@ -1712,7 +1758,8 @@ h2.sub-header {
 .news-headline {
   color: #f1c309 !important;
   font-size: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 14px; }
 
 .read-more {
   color: #f1c309; }
@@ -1849,7 +1896,8 @@ p.need-help {
 
 .post-date {
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 14px; }
 
 /* Open icon state override for accordion on FAQ */
 .ui-icon-circle-arrow-s {
@@ -1927,6 +1975,16 @@ p.need-help {
   font-weight: bold;
   text-decoration: none; }
 
+.previous {
+  margin-right: 10px; }
+
+.previous, .next {
+  display: block;
+  float: left;
+  min-width: 125px;
+  text-align: center;
+  padding: 3px 20px; }
+
 .view-more-button:hover, .read-more-button:hover {
   color: #FFFFFF !important; }
 
@@ -1938,7 +1996,7 @@ p.need-help {
   text-transform: uppercase;
   background: #f1c309;
   border-radius: 15px;
-  padding: 6px 20px;
+  padding: 5px 20px;
   font-weight: bold;
   text-decoration: none;
   display: block;
@@ -2795,12 +2853,6 @@ you can add resource intensive styles.
   .header {
     padding-left: 13%;
     padding-right: 13%; }
-    .header .desktop-nav .menu li {
-      margin-right: 20px; }
-      .header .desktop-nav .menu li a {
-        font-size: 13px; }
-    .header .desktop-secondary-nav .secondary-desktop-menu li a {
-      font-size: 13px; }
 
   .welcome .welcome-bottom {
     position: inherit;
@@ -2833,7 +2885,8 @@ you can add resource intensive styles.
 
   .page-content {
     padding-left: 13%;
-    padding-right: 13%; }
+    padding-right: 13%;
+    padding-bottom: 30px !important; }
 
   .sidebar-left {
     width: 26%;
@@ -2912,7 +2965,7 @@ This is for the larger monitors and possibly full screen viewers.
     float: left;
     width: 40%;
     padding-left: 40px;
-    margin-top: 25%; }
+    margin-top: 18%; }
     .recent-news .right-major .left {
       display: block;
       width: 100%;

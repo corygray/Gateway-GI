@@ -9,62 +9,54 @@
 
 			<div class="page-content">
 
-			<h1>News</h1>
+        <div class="sidebar-left">
+                <?php the_widget('WP_Widget_Accordion_Archives'); ?>
+        </div><!-- sidebar-left -->
 
-							<?php
-							the_archive_title( '<h1 class="page-title">', '</h1>' );
-							the_archive_description( '<div class="taxonomy-description">', '</div>' );
-							?>
-							
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+       <div class="content-right">
+  			<h1 style="margin-bottom: 3px;">News</h1>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+  							<?php
+  							the_archive_title( '<h2 class="sub-header">', '</h1>' );
+  							?>
+  							
+  							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-								<header class="entry-header article-header">
+  							<div class="news-post" id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
-									<h3 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-									<p class="byline entry-meta vcard">
-										<?php printf( __( 'Posted', 'bonestheme' ).' %1$s %2$s',
-                  							     /* the time the post was published */
-                  							     '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
-                       								/* the author of the post */
-                       								'<span class="by">'.__('by', 'bonestheme').'</span> <span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>'
-                    							); ?>
-									</p>
+  								
 
-								</header>
+  									
+                        <ul>
+                          <li style="margin-bottom: 7px;"><span class="post-date"><?php the_date(); ?></span></li>
 
-								<section class="entry-content cf">
+                          <li><a href="<?php the_permalink() ?>" class="news-headline"><?php the_title(); ?></a></li>
 
-									<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
+                          <li><?php the_excerpt(); ?></li>
+                        </ul>
 
-									<?php the_excerpt(); ?>
+  							</div>
 
-								</section>
+  							<?php endwhile; ?>
 
+  									<?php bones_page_navi(); ?>
 
-							</article>
+  							<?php else : ?>
 
-							<?php endwhile; ?>
+  									<article id="post-not-found" class="hentry cf">
+  										<header class="article-header">
+  											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
+  										</header>
+  										<section class="entry-content">
+  											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+  										</section>
+  										<footer class="article-footer">
+  												<p><?php _e( 'This is the error message in the archive.php template.', 'bonestheme' ); ?></p>
+  										</footer>
+  									</article>
 
-									<?php bones_page_navi(); ?>
-
-							<?php else : ?>
-
-									<article id="post-not-found" class="hentry cf">
-										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the archive.php template.', 'bonestheme' ); ?></p>
-										</footer>
-									</article>
-
-							<?php endif; ?>
-
+  							<?php endif; ?>
+        </div><!-- content-right -->
 
 
 
