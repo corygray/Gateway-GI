@@ -14,11 +14,7 @@
                 */
               ?>
 
-              <div class="sidebar-left">
-                <?php the_widget('WP_Widget_Accordion_Archives'); ?>
-              </div><!-- sidebar-left -->
-
-              <div class="content-right">
+              <div class="content-right" style="float: right;">
                   <h1>News</h1>
                   <div class="news-post" id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
 
@@ -35,14 +31,14 @@
                         </li>
 
                         <li style="margin-top: 7px;">
-                        <div class="next-prev" style="float: left;">
+                        <div class="next-prev">
                           <a class="view-more-button yellow previous" href="<?php echo get_permalink(get_adjacent_post(false,'',true)); ?>"><img src="/wp-content/themes/Gateway%20GI/library/images/arrow-left.png" /> Previous</a>
                           &nbsp;
                           <a class="view-more-button yellow next" href="<?php echo get_permalink(get_adjacent_post(false,'',false)); ?>">Next<img src="/wp-content/themes/Gateway%20GI/library/images/arrow-right.png" style="padding-left: 3px;"/></a>
                         </div>
 
                         <div class="social" style="float: right;">
-          
+
                         </div>
                         </li>
 
@@ -50,3 +46,12 @@
 
                   </div> <!-- news-post --> <?php // end article ?>
               </div><!-- content-right -->
+
+               <div class="sidebar-left post">
+                <?php the_widget('WP_Widget_Accordion_Archives'); ?>
+              </div><!-- sidebar-left -->
+
+
+
+
+

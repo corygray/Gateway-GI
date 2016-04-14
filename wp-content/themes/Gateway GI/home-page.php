@@ -10,7 +10,8 @@ Template Name: Home Page Template
 
 			<div class="welcome">
 
-				<h1>Welcome to our Practice</h1>
+				<h1>Welcome to 
+				<br class="welcome-header"/>our Practice</h1>
 
 				<a href="/our-doctors" class="fancy-button">
 					Meet Our Doctors
@@ -30,8 +31,8 @@ Template Name: Home Page Template
 				<p class="satisfaction-testimonials uppercase" align="center">
 					<span class="patient-satisfaction">Our patient satisfaction score is</span>
 					<span class="big blue ninety-nine">99%*</span> 
-					<span class="yellow-text patient-testimonials">Read our patient testimonials</span>
-					<span class="yellow-arrow"><img src="/wp-content/themes/Gateway%20GI/library/images/yellow-arrow.jpg"></span>
+					<span class="yellow-text patient-testimonials"><a href="/testimonials" class="yellow-text">Read our patient testimonials</a></span>
+					<span class="yellow-arrow"><a href="/testimonials"><img src="/wp-content/themes/Gateway%20GI/library/images/yellow-arrow.jpg"></a></span>
 				</p>
 
 			</div><!-- text-blurb -->

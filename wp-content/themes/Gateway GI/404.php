@@ -1,43 +1,23 @@
+<!-- removes automatically generated p tags in goofy places -->
+<?php remove_filter ('the_content', 'wpautop'); ?>
+
 <?php get_header(); ?>
 
-			<div id="content">
+	<div id="content">
 
-				<div id="inner-content" class="wrap cf">
+		<div id="inner-content" class="wrap cf main-content">
 
-					<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+			<div class="page-content">
 
-						<article id="post-not-found" class="hentry cf">
+			<center>
+				<h1 class="no-margin-bottom">Oops.. :(</h1>
+				<h2>404 - Page not found.</h2>
+			</center>
 
-							<header class="article-header">
+			</div><!-- page-content -->
 
-								<h1><?php _e( 'Epic 404 - Article Not Found', 'bonestheme' ); ?></h1>
+		</div><!-- inner-content -->
 
-							</header>
-
-							<section class="entry-content">
-
-								<p><?php _e( 'The article you were looking for was not found, but maybe try looking again!', 'bonestheme' ); ?></p>
-
-							</section>
-
-							<section class="search">
-
-									<p><?php get_search_form(); ?></p>
-
-							</section>
-
-							<footer class="article-footer">
-
-									<p><?php _e( 'This is the 404.php template.', 'bonestheme' ); ?></p>
-
-							</footer>
-
-						</article>
-
-					</main>
-
-				</div>
-
-			</div>
+	</div><!-- content -->
 
 <?php get_footer(); ?>

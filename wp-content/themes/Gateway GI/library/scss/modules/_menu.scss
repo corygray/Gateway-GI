@@ -23,6 +23,30 @@
           text-decoration: underline;
         }
       }
+
+      li.current-menu-item {
+
+        a {
+          color: #f1c309 !important;
+          text-decoration: underline;
+        }
+
+        ul {
+
+          li {
+
+            a {
+              color: #FFFFFF !important;
+              text-decoration: none;
+            }
+
+            a:hover {
+              color: #f1c309 !important;
+              text-decoration: underline !important;
+            }
+          }
+        }
+      }
     }
 
   }

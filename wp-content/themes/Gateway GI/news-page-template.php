@@ -14,10 +14,6 @@ Template Name: News Page Template
 
 			<div class="page-content">
 
-				<div class="sidebar-left">
-					<?php the_widget('WP_Widget_Accordion_Archives'); ?>
-				</div><!-- sidebar-left -->
-
 				<div class="content-right">
 					<h1>News</h1>
 
@@ -39,6 +35,10 @@ Template Name: News Page Template
 							?>
 						</ul>
 				</div> <!-- content-right -->
+
+				<div class="sidebar-left">
+					<?php the_widget('WP_Widget_Accordion_Archives'); ?>
+				</div><!-- sidebar-left -->
 
 				<div class="clear"></div>
 

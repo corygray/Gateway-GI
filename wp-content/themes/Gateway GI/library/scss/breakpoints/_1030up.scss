@@ -79,7 +79,7 @@ p.satisfaction-testimonials {
 
 .content-right {
 	width: 70%;
-	float: left;
+	float: right;
 }
 
 .accordion-archives {
@@ -122,4 +122,12 @@ p.satisfaction-testimonials {
 	.doctor {
 		width: inherit; 
 	}
+}
+
+.sidebar-left.doc-bio{
+  clear: inherit;
+}
+
+.sidebar-left.post {
+  clear: inherit;
 }

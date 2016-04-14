@@ -69,7 +69,7 @@
 						<li><a href="/news">News</a></li>
 					</ul>
 
-					<a href="/contact">contact us</a> &nbsp;&nbsp;&nbsp; <a href="/resources">resources</a><br />
+					<a href="/contact-us">contact us</a> &nbsp;&nbsp;&nbsp; <a href="/resources">resources</a><br />
 					<input type="text" class="fancy-input" placeholder="search"/>
 
 				</div><!-- mobile-navigation-container -->

@@ -186,9 +186,6 @@ them in here, they won't work.
 /******************/
 /* CUSTOM STYLES */
 /****************/
-.welcome h1 {
-  padding-left: 15%;
-  padding-right: 15%; }
 .welcome .welcome-bottom {
   bottom: -5px;
   max-height: 175px; }
@@ -196,7 +193,8 @@ them in here, they won't work.
 .page-content {
   padding-left: 10%;
   padding-right: 10%;
-  text-align: left; }
+  text-align: left;
+  padding-bottom: 60px; }
 
 .locations-inner {
   margin-left: 10%;
@@ -298,6 +296,10 @@ p.white br {
   display: none; }
 .page-id-22 br {
   display: none; }
+
+.page-id-24 .excerpt-read-more, .page-id-24 .excerpt-read-more:active, .page-id-24 .excerpt-read-more:visited {
+  margin: 0;
+  margin-top: 12px; }
 
 /*********************
 NAVIGATION STYLES
@@ -511,7 +513,8 @@ h1, .h1 {
   margin-right: 10%; }
 
 .locations {
-  min-height: 415px; }
+  min-height: 415px;
+  background-image: url("../images/blue-map-large.png"); }
 
 .locations-inner {
   margin-left: 9%;
@@ -532,7 +535,8 @@ h1, .h1 {
 .locations-top-right {
   width: 48%;
   padding-left: 1%;
-  float: right; }
+  float: right;
+  margin-top: 2%; }
 
 .locations-footer .location1 {
   width: 60%;
@@ -656,7 +660,7 @@ p.satisfaction-testimonials {
 
 .content-right {
   width: 70%;
-  float: left; }
+  float: right; }
 
 .accordion-archives {
   margin-left: 1%; }
@@ -683,6 +687,12 @@ p.satisfaction-testimonials {
   text-align: left; }
   .doctors .doctor {
     width: inherit; }
+
+.sidebar-left.doc-bio {
+  clear: inherit; }
+
+.sidebar-left.post {
+  clear: inherit; }
 
 /*
 you can call the larger styles if you want, but there's really no need

@@ -23,6 +23,79 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
+.fancy-button, .fancy-button:active, .fancy-button:visited {
+  background-color: #f1c309;
+  border-radius: 15px;
+  padding: 6px 50px 6px 20px; ;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-image: url('../images/fancy-button-yellow.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 34px;
+  text-decoration: none;
+
+}
+
+.fancy-button:hover {
+  background-color: #FFFFFF;
+  color: #f1c309 !important;
+  background-image: url('../images/fancy-button-yellow-hover.jpg');
+
+}
+
+.blue-button, .blue-button:active, .blue-button:visited {
+  display: block;
+  width: 100%;
+  background: #51b5e6;
+  min-width: 100px;
+  max-width: 215px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 15px;
+  padding: 3px 0px;
+  margin: 0 auto;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.blue-button:hover {
+  color: #FFFFFF !important;
+  text-decoration: underline;
+}
+
+.view-more-button, .read-more-button, .view-more-button:visited, .read-more-button:visited, .view-more-button:active, .read-more-button:active {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background: #f1c309;
+  border-radius: 15px;
+  padding: 5px 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.previous {
+  margin-right: 10px;
+}
+
+.next {
+
+}
+
+.previous, .next {
+  display: block;
+  float: left;
+  min-width: 125px;
+  text-align: center;
+  padding: 3px 20px;
+}
+
+.view-more-button:hover, .read-more-button:hover {
+  color: #FFFFFF !important;
+}
+
 
 %btn {
   display: inline-block;

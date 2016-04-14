@@ -44,6 +44,10 @@ on larger screens.
 		width: inherit;
 		min-width: 620px;
 	}
+
+	br.welcome-header {
+	  display: none;
+	}
 }
 
 .clear {

@@ -17,7 +17,7 @@
   			<h1 style="margin-bottom: 3px;">News</h1>
 
   							<?php
-  							the_archive_title( '<h2 class="sub-header">', '</h1>' );
+  							the_archive_title( '<h2 class="sub-header blue">', '</h2>' );
   							?>
   							
   							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
