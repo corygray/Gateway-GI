@@ -1755,15 +1755,15 @@ h2.sub-header {
       width: 100%;
       height: auto; }
 
-.text-blurb {
+.welcome-blurb {
   text-align: center;
   margin-right: 13%;
   margin-left: 13%;
   padding-top: 1.5em;
   padding-bottom: 1.5em; }
-  .text-blurb h1 {
+  .welcome-blurb h1 {
     font-weight: bold; }
-  .text-blurb p.satisfaction-testimonials {
+  .welcome-blurb p.satisfaction-testimonials {
     display: none; }
 
 .procedures {
@@ -2035,6 +2035,11 @@ p.need-help {
   font-size: 13px !important;
   font-weight: normal;
   padding-right: 35px !important; }
+
+.archive-accordion-year ul {
+  width: 335px;
+  margin: 0 auto;
+  padding-left: 20px; }
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -2453,7 +2458,7 @@ in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 600px) {
-  .text-blurb h1 {
+  .welcome-blurb h1 {
     font-weight: normal; }
 
   p.satisfaction-testimonials {
@@ -2867,10 +2872,6 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
-  .header {
-    padding-left: 13%;
-    padding-right: 13%; }
-
   .welcome .welcome-bottom {
     position: inherit;
     max-height: 150px;
@@ -3005,7 +3006,7 @@ This is for the larger monitors and possibly full screen viewers.
   .recent-news hr {
     display: none; }
 
-  .text-blurb {
+  .welcome-blurb {
     max-width: 1030px;
     margin: 0 auto; }
 

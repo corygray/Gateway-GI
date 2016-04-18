@@ -32,9 +32,9 @@
 
                         <li style="margin-top: 7px;">
                         <div class="next-prev">
-                          <a class="view-more-button yellow previous" href="<?php echo get_permalink(get_adjacent_post(false,'',true)); ?>"><img src="/wp-content/themes/Gateway%20GI/library/images/arrow-left.png" /> Previous</a>
+                          <a class="view-more-button yellow previous" href="<?php echo get_permalink(get_adjacent_post(false,'',true)); ?>"><img src="<?php echo get_template_directory_uri(); ?>/library/images/arrow-left.png" /> Older</a>
                           &nbsp;
-                          <a class="view-more-button yellow next" href="<?php echo get_permalink(get_adjacent_post(false,'',false)); ?>">Next<img src="/wp-content/themes/Gateway%20GI/library/images/arrow-right.png" style="padding-left: 3px;"/></a>
+                          <a class="view-more-button yellow next" href="<?php echo get_permalink(get_adjacent_post(false,'',false)); ?>">Newer<img src="<?php echo get_template_directory_uri(); ?>/library/images/arrow-right.png" style="padding-left: 3px;"/></a>
                         </div>
 
                         <div class="social" style="float: right;">

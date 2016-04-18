@@ -18,12 +18,12 @@ Template Name: Home Page Template
 				</a>
 
 				<div class="welcome-bottom">
-					<img src="/wp-content/themes/Gateway%20GI/library/images/employee-group-photo.png" class="group-photo" />
+					<img src="<?php echo get_template_directory_uri(); ?>/library/images/employee-group-photo.png" class="group-photo" />
 				</div><!-- welcome bottom -->
 
 			</div><!-- welcome -->
 
-			<div class="text-blurb">
+			<div class="welcome-blurb">
 
 				<h1>A Better Way - Gateway</h1>
 				<p class="main-content">Gateway Gastroenterology is a group of eight board certified gastroenterologists. Our goal is to is to provide outstanding care in a timely, courteous, and professional manner. Our mission is to aid in improving your digestive health and also to be a resource to your primary care physician in caring for you. All of our physicians are committed to ongoing education and will make every effort to provide you with the most up to date and thorough care possible. We offer a wide variety of gastroenterology services including inpatient and outpatient consultation as well as a broad range of endoscopic procedures including upper endoscopy and colonoscopy.</p>
@@ -32,10 +32,10 @@ Template Name: Home Page Template
 					<span class="patient-satisfaction">Our patient satisfaction score is</span>
 					<span class="big blue ninety-nine">99%*</span> 
 					<span class="yellow-text patient-testimonials"><a href="/testimonials" class="yellow-text">Read our patient testimonials</a></span>
-					<span class="yellow-arrow"><a href="/testimonials"><img src="/wp-content/themes/Gateway%20GI/library/images/yellow-arrow.jpg"></a></span>
+					<span class="yellow-arrow"><a href="/testimonials"><img src="<?php echo get_template_directory_uri(); ?>/library/images/yellow-arrow.jpg"></a></span>
 				</p>
 
-			</div><!-- text-blurb -->
+			</div><!-- welcome-blurb -->
 
 			<div class="procedures">
 

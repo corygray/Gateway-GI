@@ -37,7 +37,7 @@
         <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
         <script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script> 
 
-        <link rel="stylesheet" type="text/css" href="/wp-content/themes/Gateway%20GI/library/css/snap.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/library/css/snap.css">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
@@ -84,9 +84,9 @@
 
 				<div id="inner-header" class="wrap cf">
 
-		        	<a href="#" class="open-left" id="open-left"><img src="/wp-content/themes/Gateway%20GI/library/images/mobile-menu.png" class="mobile-nav-button"/></a>
+		        	<a href="#" class="open-left" id="open-left"><img src="<?php echo get_template_directory_uri(); ?>/library/images/mobile-menu.png" class="mobile-nav-button"/></a>
 
-					<a href="/"><img src="/wp-content/themes/Gateway%20GI/library/images/gatewaygi-logo.png" class="logo"/></a>
+					<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/library/images/gatewaygi-logo.png" class="logo"/></a>
 
 					<div class="desktop-secondary-nav">
 
