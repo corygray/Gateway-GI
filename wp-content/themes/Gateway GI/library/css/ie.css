@@ -188,7 +188,7 @@ them in here, they won't work.
 /****************/
 .welcome .welcome-bottom {
   bottom: -5px;
-  max-height: 175px; }
+  max-height: 150px; }
 
 .page-content {
   padding-left: 10%;
@@ -219,7 +219,10 @@ them in here, they won't work.
 
 .locations-inner.top p {
   text-align: center;
-  font-size: 25px; }
+  font-size: 24px; }
+
+.locations-top-right p {
+  text-align: left; }
 
 .fancy-input {
   margin: 0 auto;

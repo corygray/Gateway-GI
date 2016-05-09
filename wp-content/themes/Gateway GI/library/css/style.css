@@ -1443,8 +1443,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
     text-decoration: none; }
 
 h1, .h1 {
-  font-size: 2.2em;
-  line-height: 1.0em;
+  font-size: 35px;
+  line-height: 35px;
   letter-spacing: 2px; }
 
 h2, .h2 {
@@ -1659,8 +1659,8 @@ div#wpadminbar {
   margin-top: 0px; }
 
 .page-content {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 17%;
+  padding-right: 17%;
   text-align: center;
   padding-bottom: 1em; }
   .page-content p {
@@ -1736,7 +1736,7 @@ h2.sub-header {
 
 .welcome {
   background-image: url("../images/blue-bg.png");
-  min-height: 340px;
+  min-height: 300px;
   width: auto;
   position: relative;
   overflow: hidden;
@@ -1746,10 +1746,10 @@ h2.sub-header {
   .welcome .welcome-bottom {
     max-height: 150px;
     display: block;
-    bottom: -10px;
+    bottom: -12px;
     margin-top: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
     position: absolute; }
     .welcome .welcome-bottom .group-photo {
       width: 100%;
@@ -1757,12 +1757,10 @@ h2.sub-header {
 
 .welcome-blurb {
   text-align: center;
-  margin-right: 13%;
-  margin-left: 13%;
+  margin-right: 15%;
+  margin-left: 15%;
   padding-top: 1.5em;
   padding-bottom: 1.5em; }
-  .welcome-blurb h1 {
-    font-weight: bold; }
   .welcome-blurb p.satisfaction-testimonials {
     display: none; }
 
@@ -1782,19 +1780,23 @@ h2.sub-header {
   padding-top: 1.5em;
   padding-bottom: 1em; }
   .procedures .content {
-    margin-left: 13%;
-    margin-right: 13%; }
+    margin-left: 15%;
+    margin-right: 15%; }
     .procedures .content h1 {
-      color: #51b5e6; }
+      color: #51b5e6;
+      font-weight: normal; }
     .procedures .content ul.yellow-procedures {
       color: #f1c309;
       text-transform: uppercase;
-      font-weight: bold; }
+      font-weight: bold;
+      font-family: 'Montserrat';
+      font-size: 19px;
+      font-weight: normal; }
       .procedures .content ul.yellow-procedures li:before {
         content: "•";
         padding-right: 5px; }
       .procedures .content ul.yellow-procedures li {
-        margin-bottom: .8em; }
+        margin-bottom: 10px; }
     .procedures .content ul.procedures-list {
       color: #FFFFFF;
       text-transform: none; }
@@ -1803,23 +1805,38 @@ h2.sub-header {
         padding-right: 5px; }
     .procedures .content p {
       color: #FFFFFF; }
+    .procedures .content .home {
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 35px;
+      font-family: 'Montserrat';
+      margin-bottom: 15px; }
+    .procedures .content .areas {
+      font-size: 29px; }
 
 .tablet-desktop-areas {
   display: none; }
 
 .recent-news {
-  margin-left: 13%;
-  margin-right: 13%;
+  margin-left: 17%;
+  margin-right: 17%;
   color: #7d7d7d;
   text-align: left;
   padding-top: 1.5em;
-  padding-bottom: 2em; }
+  padding-bottom: 3em; }
   .recent-news hr {
     color: #d8cec2;
     background: #d8cec2;
     height: 2px;
     border: 0px;
     margin: 50px 0; }
+  .recent-news .recent-news-header {
+    font-size: 35px;
+    font-weight: normal; }
+  .recent-news .excerpt-read-more {
+    color: #f1c309; }
+  .recent-news p {
+    margin-top: 0px; }
 
 .news-headline {
   color: #f1c309 !important;
@@ -1828,7 +1845,7 @@ h2.sub-header {
   margin-bottom: 14px; }
 
 .read-more {
-  color: #f1c309; }
+  color: #f1c309 !important; }
 
 .locations {
   background: url("../images/blue-map.png");
@@ -1842,8 +1859,11 @@ h2.sub-header {
     width: 100%; }
 
 .locations-inner {
-  margin-left: 13%;
-  margin-right: 13%; }
+  margin-left: 17%;
+  margin-right: 17%; }
+  .locations-inner .locations-top-right p {
+    font-size: 22px;
+    text-align: left; }
 
 .locations-footer {
   background: #232d4f;
@@ -1860,7 +1880,7 @@ h2.sub-header {
   .locations-footer hr {
     background-color: #FFFFFF;
     height: 1.5px;
-    margin-bottom: 2em; }
+    margin-bottom: 20px; }
 
 .sub-header {
   margin-top: 0px;
@@ -1901,11 +1921,20 @@ h2.sub-header {
 
 p.dark-blue {
   color: #232d4f;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 22px; }
+
+p.blue-large, .blue-large {
+  text-transform: uppercase;
+  color: #51b5e6 !important;
+  font-size: 22px;
+  line-height: 22px; }
 
 p.blue, .blue {
-  text-transform: uppercase;
-  color: #51b5e6 !important; }
+  color: #51b5e6 !important;
+  font-size: 16px; }
 
 p.white {
   color: #FFFFFF !important; }
@@ -1940,12 +1969,17 @@ p.need-help {
 .blue-button-dropdown {
   display: none;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 8px; }
   .blue-button-dropdown li a {
     color: #232d4f; }
 
 .main-content {
-  color: #7d7d7d; }
+  color: #7d7d7d;
+  font-family: 'Arial';
+  font-size: 16px;
+  font-weight: normal; }
 
 .location {
   margin-bottom: 25px; }
@@ -1958,7 +1992,7 @@ p.need-help {
   padding-right: 10px; }
 
 .news-post {
-  margin-bottom: 50px; }
+  margin-bottom: 20px; }
 
 .post-date {
   text-transform: uppercase;
@@ -1999,7 +2033,7 @@ p.need-help {
   width: 100%; }
 
 .left {
-  padding-bottom: 1.5em; }
+  padding-bottom: 40px; }
 
 .page-id-6 .header {
   border-bottom: 0px; }
@@ -2288,7 +2322,7 @@ tweeners.
   /****************/
   .welcome .welcome-bottom {
     bottom: -5px;
-    max-height: 175px; }
+    max-height: 150px; }
 
   .page-content {
     padding-left: 10%;
@@ -2319,7 +2353,10 @@ tweeners.
 
   .locations-inner.top p {
     text-align: center;
-    font-size: 25px; }
+    font-size: 24px; }
+
+  .locations-top-right p {
+    text-align: left; }
 
   .fancy-input {
     margin: 0 auto;

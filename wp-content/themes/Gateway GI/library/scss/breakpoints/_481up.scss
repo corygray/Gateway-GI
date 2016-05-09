@@ -34,7 +34,7 @@ them in here, they won't work.
 
 	.welcome-bottom {
 		bottom: -5px;
-		max-height: 175px;
+		max-height: 150px;
 	}
 }
 
@@ -75,7 +75,15 @@ them in here, they won't work.
 
 .locations-inner.top p {
 	text-align: center;
-	font-size: 25px;
+	font-size: 24px;
+}
+
+.locations-top-right p {
+	text-align: left;
+}
+
+.locations-footer p.white {
+	
 }
 
 .fancy-input {

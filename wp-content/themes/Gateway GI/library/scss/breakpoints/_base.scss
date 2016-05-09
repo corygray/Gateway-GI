@@ -124,8 +124,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 2.2em;
-	line-height: 1.0em;
+	font-size: 35px;
+	line-height: 35px;
 	letter-spacing: 2px;
 }
 
@@ -514,8 +514,8 @@ div#wpadminbar {
 #content {margin-top: 0px;}
 
 .page-content {
-	padding-left: 15%;
-	padding-right: 15%;
+	padding-left: 17%;
+	padding-right: 17%;
 	text-align: center;
 	padding-bottom: 1em;
 
@@ -629,7 +629,7 @@ h2.sub-header {
 
 .welcome {
     background-image: url('../images/blue-bg.png');
-    min-height: 340px;
+    min-height: 300px;
     width: auto;
     position: relative;
     overflow: hidden;
@@ -645,10 +645,10 @@ h2.sub-header {
     .welcome-bottom {
 	    max-height: 150px;
 	    display: block;
-	    bottom: -10px;
+	    bottom: -12px;
 	    margin-top: 15px;
-	    padding-left: 10px;
-	    padding-right: 10px;
+	    padding-left: 10%;
+	    padding-right: 10%;
 	    position: absolute;
 
 	    .group-photo {
@@ -661,14 +661,14 @@ h2.sub-header {
 
 .welcome-blurb {
 	text-align: center;
-	margin-right: 13%;
-	margin-left: 13%;
+	margin-right: 15%;
+	margin-left: 15%;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 
 
 	h1 {
-		font-weight: bold;
+		
 	}
 
 	p.satisfaction-testimonials {
@@ -693,17 +693,21 @@ h2.sub-header {
 	padding-bottom: 1em;
 
 	.content {
-		margin-left: 13%;
-		margin-right: 13%;
+		margin-left: 15%;
+		margin-right: 15%;
 
 		h1 {
 			color: #51b5e6;
+			font-weight: normal;
 		}
 
 		ul.yellow-procedures {
 			color: #f1c309;
 			text-transform: uppercase;
 			font-weight: bold;
+			font-family: 'Montserrat';
+			font-size: 19px;
+			font-weight: normal;
 
 			li:before {
 				content: "•"; 
@@ -711,7 +715,7 @@ h2.sub-header {
 			}
 
 			li {
-				margin-bottom: .8em;
+				margin-bottom: 10px;
 			}
 		}
 
@@ -729,6 +733,20 @@ h2.sub-header {
 			color: #FFFFFF;
 		}
 
+		
+
+		.home {
+			font-weight: bold; 
+			font-size: 16px; 
+			margin-top: 35px; 
+			font-family: 'Montserrat'; 
+			margin-bottom: 15px;
+		}
+
+		.areas {
+			font-size: 29px;
+		}
+
 	}
 }
 
@@ -738,12 +756,12 @@ h2.sub-header {
 
 
 .recent-news {
-	margin-left: 13%;
-	margin-right: 13%;
+	margin-left: 17%;
+	margin-right: 17%;
 	color: #7d7d7d;
 	text-align: left;
 	padding-top: 1.5em;
-	padding-bottom: 2em;
+	padding-bottom: 3em;
 
 	hr {
 		color: #d8cec2;
@@ -751,6 +769,19 @@ h2.sub-header {
 		height: 2px;
 		border: 0px;
 		margin: 50px 0;
+	}
+
+	.recent-news-header {
+		font-size: 35px;
+		font-weight: normal;
+	}
+
+	.excerpt-read-more {
+		color: #f1c309;
+	}
+
+	p {
+		margin-top: 0px;
 	}
 }
 
@@ -762,7 +793,7 @@ h2.sub-header {
 }
 
 .read-more {
-	color: #f1c309;
+	color: #f1c309 !important;
 }
 
 .locations {
@@ -781,8 +812,16 @@ h2.sub-header {
 }
 
 .locations-inner {
-	margin-left: 13%;
-	margin-right: 13%;
+	margin-left: 17%;
+	margin-right: 17%;
+
+	.locations-top-right {
+
+		p {
+			font-size: 22px;
+			text-align: left;
+		}
+	}
 }
 
 .locations-footer {
@@ -805,7 +844,7 @@ h2.sub-header {
 	hr {
 		background-color: #FFFFFF;
 		height: 1.5px;
-		margin-bottom: 2em;
+		margin-bottom: 20px;
 	}
 
 }
@@ -862,12 +901,22 @@ h2.sub-header {
 
 p.dark-blue {
 	color: #232d4f;
-	text-transform: uppercase;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 22px;
 }
 
-p.blue, .blue {
+p.blue-large, .blue-large {
 	text-transform: uppercase;
 	color: #51b5e6 !important;
+	font-size: 22px;
+	line-height: 22px;
+}
+
+p.blue, .blue{
+	color: #51b5e6 !important;
+	font-size: 16px;
 }
 
 p.white {
@@ -911,6 +960,8 @@ p.need-help {
 	display: none;
 	font-weight: bold;
 	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 8px;
 
 	li {
 
@@ -923,6 +974,9 @@ p.need-help {
 
 .main-content {
 	color: #7d7d7d;
+	font-family: 'Arial';
+	font-size: 16px;
+	font-weight: normal;
 }
 
 .location {
@@ -939,7 +993,7 @@ p.need-help {
 }
 
 .news-post {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .post-date {
@@ -989,7 +1043,7 @@ p.need-help {
 }
 
 .left {
-	padding-bottom: 1.5em;
+	padding-bottom: 40px;
 }
 
 .page-id-6 {

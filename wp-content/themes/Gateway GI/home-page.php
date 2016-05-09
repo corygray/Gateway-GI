@@ -50,7 +50,7 @@ Template Name: Home Page Template
 					</ul>
 					<p>Quarterly reviews of Gateway’s endoscopy procedures consistently rank the physicians of Gateway Gastroenterology as leaders in gastrointestinal endoscopy quality. In fact, the Gateway Endoscopy Center was recently awarded for such quality by becoming an American Society for Gastrointestinal Endoscopy (ASGE)-recognized endoscopy unit.</p>
 
-					<p class="blue">
+					<p class="blue home">
 					Save time at your appointment by completing forms prior to your visit!
 					</p>
 
@@ -58,7 +58,7 @@ Template Name: Home Page Template
 					Patient Forms
 					</a></p>
 
-					<h1>Areas of Expertise</h1>
+					<h1 class="areas">Areas of Expertise</h1>
 					<p>What sets Gateway Gastroenterology apart from other practices is the training of our physicians! Our skilled doctors can help you with issues for any of the following areas. </p>
 
 					<div class="mobile-areas">
@@ -172,7 +172,7 @@ Template Name: Home Page Template
 			<div class="recent-news">
 
 				<div class="left-major">
-					<h1>Recent News</h1>
+					<h1 class="recent-news-header">Recent News</h1>
 
 					<!-- pulls in 5 most recent posts -->
 					<ul>
@@ -200,14 +200,14 @@ Template Name: Home Page Template
 				<div style="text-align: center;font-weight: bold;" class="right-major">
 
 					<div class="left fifty-percent">
-						<p class="dark-blue" style="margin-top: .2em; margin-bottom: .2em;">Colon Cancer Screening</p>
-						<p class="blue" style="margin-top: .2em; margin-bottom: 1em;">It can save your life!</p>
+						<p class="dark-blue" style="margin-top: .2em; margin-bottom: .2em;">Colon C<img src="/wp-content/themes/Gateway%20GI/library/images/cancer_screening_star.png" />ncer Screening</p>
+						<p class="blue-large" style="margin-top: .2em; margin-bottom: 1em;">It can save your life!</p>
 						<a class="view-more-button" href="#" style="margin-top: .2em; margin-bottom: 1em;">Read More</a>
 					</div><!-- left 50-percent -->
 
 					<div class="right fifty-percent">
 						<p class="dark-blue" style="margin-top: .2em; margin-bottom: .2em;">Hemorrhoids?</p>
-						<p class="blue" style="margin-top: .2em; margin-bottom: .2em;">Dont' treat them.<br />Remove them.</p>
+						<p class="blue-large" style="margin-top: .2em; margin-bottom: .2em;">Dont' treat them.<br />Remove them.</p>
 						<p class="dark-blue" style="margin-top: .2em; margin-bottom: 1em;">Ask us!</p>
 						<a class="view-more-button" href="#" style="margin-top: .2em; margin-bottom: 1em;">Read More</a>
 					</div>

@@ -31,7 +31,7 @@
 					<div class="locations-footer">
 						<div class="locations-inner footer">
 							<div class="location1">
-								<p class="blue" style="font-weight: bold;">Gateway Gastroenterology</p>
+								<p class="blue">Gateway Gastroenterology</p>
 								<p class="white">St. Luke's Outpatient Center</p>
 								<p class="white">121 St. Luke's Center Drive, Ste. 406</p>
 								<p class="white">Chesterfield, MO 63017</p>
@@ -39,7 +39,7 @@
 							</div><!-- location1 -->
 
 							<div class="location2">
-								<p class="blue" style="font-weight: bold;">Gateway Endoscopy Center</p>
+								<p class="blue">Gateway Endoscopy Center</p>
 								<p class="white">12855 N. 40 Dr., Suite 150</p>
 								<p class="white">St. Louis, MO 63141</p>
 								<p class="white">Office: 314.336.1130</p>
