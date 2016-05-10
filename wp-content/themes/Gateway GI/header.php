@@ -61,9 +61,10 @@
 				<div class="mobile-navigation-container">
 
 					<ul>
-						<li><a href="/about">About</a></li>
-						<li class="sub-page"><a href="/our-doctors">Our Doctors</a></li>
+						<li class="has-child"><a href="/about">About</a></li>
 						<li class="sub-page"><a href="/doctor-bios">Doctor Bios</a></li>
+						<li class="sub-page last-child"><a href="/testimonials">Testimonials</a></li>
+						<li><a href="/our-doctors">Our Doctors</a></li>
 						<li><a href="#">Patient Forms</a></li>
 						<li><a href="/procedures">Procedures</a></li>
 						<li><a href="/locations">Locations</a></li>

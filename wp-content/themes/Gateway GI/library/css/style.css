@@ -956,15 +956,19 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .fancy-button, .fancy-button:active, .fancy-button:visited {
   background-color: #f1c309;
   border-radius: 15px;
-  padding: 6px 50px 6px 20px;
+  padding: 7px 12px 6px 0px;
   font-weight: bold;
   color: #FFFFFF;
   text-transform: uppercase;
   background-image: url("../images/fancy-button-yellow.jpg");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 34px;
-  text-decoration: none; }
+  background-size: 42px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  max-width: 285px;
+  margin: 0 auto; }
 
 .fancy-button:hover {
   background-color: #FFFFFF;
@@ -976,7 +980,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   width: 100%;
   background: #51b5e6;
   min-width: 100px;
-  max-width: 215px;
+  max-width: 285px;
   text-align: center;
   color: #FFFFFF;
   border-radius: 15px;
@@ -995,9 +999,16 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   text-transform: uppercase;
   background: #f1c309;
   border-radius: 15px;
-  padding: 5px 20px;
+  padding: 6px 20px;
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none;
+  display: block;
+  max-width: 285px;
+  text-align: center;
+  margin: 0 auto; }
+
+.page-id-22 .view-more-button {
+  margin-bottom: 50px; }
 
 .previous {
   margin-right: 10px; }
@@ -1047,6 +1058,25 @@ and it will create a button dependant on those variables.
   .blue-btn:active, .comment-reply-link:active, #submit:active {
     background-color: #2472a4; }
 
+@media only screen and (min-width: 480px) {
+  .fancy-button, .fancy-button:active, .fancy-button:visited {
+    max-width: 335px; }
+
+  .blue-button, .blue-button:active, .blue-button:visited {
+    max-width: 335px; }
+
+  .view-more-button, .read-more-button, .view-more-button:visited, .read-more-button:visited, .view-more-button:active, .read-more-button:active {
+    max-width: 335px; } }
+@media only screen and (min-width: 600px) {
+  .fancy-button, .fancy-button:active, .fancy-button:visited {
+    max-width: 300px; }
+
+  .blue-button, .blue-button:active, .blue-button:visited {
+    max-width: 200px; }
+
+  .view-more-button, .read-more-button, .view-more-button:visited, .read-more-button:visited, .view-more-button:active, .read-more-button:active {
+    max-width: 200px;
+    margin: 0; } }
 /******************************************************************
 Site Name:
 Author:
@@ -1443,7 +1473,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
     text-decoration: none; }
 
 h1, .h1 {
-  font-size: 35px;
+  font-size: 32px;
   line-height: 35px;
   letter-spacing: 2px; }
 
@@ -1659,8 +1689,8 @@ div#wpadminbar {
   margin-top: 0px; }
 
 .page-content {
-  padding-left: 17%;
-  padding-right: 17%;
+  padding-left: 10%;
+  padding-right: 10%;
   text-align: center;
   padding-bottom: 1em; }
   .page-content p {
@@ -1668,7 +1698,7 @@ div#wpadminbar {
 
 .header {
   background: #FFFFFF;
-  border-bottom: 8px solid #f1c309; }
+  border-bottom: 10px solid #f1c309; }
   .header .logo {
     max-width: 175px;
     height: auto;
@@ -1725,6 +1755,20 @@ p {
           text-decoration: underline; }
     .mobile-navigation .mobile-navigation-container input[type="text"] {
       margin-top: 5px; }
+    .mobile-navigation .mobile-navigation-container .has-child {
+      border-bottom: 0px;
+      padding-bottom: 0px; }
+    .mobile-navigation .mobile-navigation-container .sub-page {
+      border-bottom: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px; }
+      .mobile-navigation .mobile-navigation-container .sub-page a {
+        text-transform: none !important;
+        padding-left: 10px;
+        font-size: 13px; }
+    .mobile-navigation .mobile-navigation-container .last-child {
+      border-bottom: 1px solid #576db9 !important;
+      padding-bottom: 10px; }
 
 h2.sub-header {
   color: #787a73;
@@ -1741,6 +1785,11 @@ h2.sub-header {
   position: relative;
   overflow: hidden;
   text-align: center; }
+  .welcome h1 {
+    margin-bottom: 10px; }
+  .welcome .welcome-inner {
+    margin-right: 10%;
+    margin-left: 10%; }
   .welcome .fancy-button {
     margin-bottom: 5px; }
   .welcome .welcome-bottom {
@@ -1757,8 +1806,8 @@ h2.sub-header {
 
 .welcome-blurb {
   text-align: center;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin-right: 10%;
+  margin-left: 10%;
   padding-top: 1.5em;
   padding-bottom: 1.5em; }
   .welcome-blurb p.satisfaction-testimonials {
@@ -1780,8 +1829,8 @@ h2.sub-header {
   padding-top: 1.5em;
   padding-bottom: 1em; }
   .procedures .content {
-    margin-left: 15%;
-    margin-right: 15%; }
+    margin-left: 10%;
+    margin-right: 10%; }
     .procedures .content h1 {
       color: #51b5e6;
       font-weight: normal; }
@@ -1818,8 +1867,8 @@ h2.sub-header {
   display: none; }
 
 .recent-news {
-  margin-left: 17%;
-  margin-right: 17%;
+  margin-left: 10%;
+  margin-right: 10%;
   color: #7d7d7d;
   text-align: left;
   padding-top: 1.5em;
@@ -1831,7 +1880,7 @@ h2.sub-header {
     border: 0px;
     margin: 50px 0; }
   .recent-news .recent-news-header {
-    font-size: 35px;
+    font-size: 32px;
     font-weight: normal; }
   .recent-news .excerpt-read-more {
     color: #f1c309; }
@@ -1852,17 +1901,18 @@ h2.sub-header {
   background-blend-mode: soft-light;
   text-align: center;
   padding-top: 1.5em;
-  padding-bottom: 1.5em; }
+  padding-bottom: 1.5em;
+  overflow: auto; }
   .locations .navigation-icon {
     max-width: 45px;
     height: auto;
     width: 100%; }
 
 .locations-inner {
-  margin-left: 17%;
-  margin-right: 17%; }
+  margin-left: 10%;
+  margin-right: 10%; }
   .locations-inner .locations-top-right p {
-    font-size: 22px;
+    font-size: 20px;
     text-align: left; }
 
 .locations-footer {
@@ -1872,7 +1922,8 @@ h2.sub-header {
   padding-bottom: 1.5em; }
   .locations-footer p.blue {
     font-size: 20px;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    line-height: 20px; }
   .locations-footer p.white {
     font-size: 12px;
     margin-bottom: 2px;
@@ -1985,11 +2036,12 @@ p.need-help {
   margin-bottom: 25px; }
 
 .location-image {
-  max-width: 275px;
+  max-width: 230px;
   height: auto;
   width: 100%;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  margin-bottom: 10px; }
 
 .news-post {
   margin-bottom: 20px; }
@@ -2051,7 +2103,8 @@ p.need-help {
   margin-top: 10px;
   margin-bottom: 10px;
   margin: 0 auto;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 50px !important; }
 
 .fancy-input {
   height: 32px !important;

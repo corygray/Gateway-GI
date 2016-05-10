@@ -124,7 +124,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 35px;
+	font-size: 32px;
 	line-height: 35px;
 	letter-spacing: 2px;
 }
@@ -514,8 +514,8 @@ div#wpadminbar {
 #content {margin-top: 0px;}
 
 .page-content {
-	padding-left: 17%;
-	padding-right: 17%;
+	padding-left: 10%;
+	padding-right: 10%;
 	text-align: center;
 	padding-bottom: 1em;
 
@@ -526,7 +526,7 @@ div#wpadminbar {
 
 .header {
 	background: #FFFFFF;
-	border-bottom: 8px solid #f1c309;
+	border-bottom: 10px solid #f1c309;
 
 	.logo {
 		max-width: 175px;
@@ -613,6 +613,28 @@ p {
 		input[type="text"] {
 			margin-top: 5px;
 		}
+
+		.has-child {
+			border-bottom: 0px;
+			padding-bottom: 0px;
+		}
+
+		.sub-page {
+			border-bottom: 0px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+
+			a {
+				text-transform: none !important; 
+				padding-left: 10px;
+				font-size: 13px;
+			}
+		}
+
+		.last-child {
+			border-bottom: 1px solid #576db9 !important;
+			padding-bottom: 10px;
+		}
 	}
 
 }
@@ -636,6 +658,12 @@ h2.sub-header {
     text-align: center;
 
     h1 {
+    	margin-bottom: 10px;
+    }
+
+    .welcome-inner {
+    	margin-right: 10%;
+    	margin-left: 10%;
     }
 
     .fancy-button {
@@ -661,8 +689,8 @@ h2.sub-header {
 
 .welcome-blurb {
 	text-align: center;
-	margin-right: 15%;
-	margin-left: 15%;
+	margin-right: 10%;
+	margin-left: 10%;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 
@@ -693,8 +721,8 @@ h2.sub-header {
 	padding-bottom: 1em;
 
 	.content {
-		margin-left: 15%;
-		margin-right: 15%;
+		margin-left: 10%;
+		margin-right: 10%;
 
 		h1 {
 			color: #51b5e6;
@@ -756,8 +784,8 @@ h2.sub-header {
 
 
 .recent-news {
-	margin-left: 17%;
-	margin-right: 17%;
+	margin-left: 10%;
+	margin-right: 10%;
 	color: #7d7d7d;
 	text-align: left;
 	padding-top: 1.5em;
@@ -772,7 +800,7 @@ h2.sub-header {
 	}
 
 	.recent-news-header {
-		font-size: 35px;
+		font-size: 32px;
 		font-weight: normal;
 	}
 
@@ -802,6 +830,7 @@ h2.sub-header {
 	text-align: center;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
+	overflow: auto;
 
 
 	.navigation-icon {
@@ -812,13 +841,13 @@ h2.sub-header {
 }
 
 .locations-inner {
-	margin-left: 17%;
-	margin-right: 17%;
+	margin-left: 10%;
+	margin-right: 10%;
 
 	.locations-top-right {
 
 		p {
-			font-size: 22px;
+			font-size: 20px;
 			text-align: left;
 		}
 	}
@@ -833,6 +862,7 @@ h2.sub-header {
 	p.blue {
 		font-size: 20px;
 		margin-bottom: 5px;
+		line-height: 20px;
 	}
 
 	p.white {
@@ -985,11 +1015,12 @@ p.need-help {
 }
 
 .location-image {
-	max-width: 275px;
+	max-width: 230px;
 	height: auto;
 	width: 100%;
 	padding-left: 10px;
 	padding-right: 10px;
+	margin-bottom: 10px;
 }
 
 .news-post {
@@ -1066,8 +1097,9 @@ p.need-help {
 	    max-width: 142px;
 	    margin-top: 10px;
 	    margin-bottom: 10px;
-      margin: 0 auto;
-      margin-top: 20px;
+      	margin: 0 auto;
+      	margin-top: 20px;
+      	margin-bottom: 50px !important;
 
 	}
 }

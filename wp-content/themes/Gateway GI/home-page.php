@@ -13,9 +13,11 @@ Template Name: Home Page Template
 				<h1>Welcome to 
 				<br class="welcome-header"/>our Practice</h1>
 
-				<a href="/our-doctors" class="fancy-button">
-					Meet Our Doctors
-				</a>
+				<div class="welcome-inner">
+					<a href="/our-doctors" class="fancy-button">
+						Meet Our Doctors
+					</a>
+				</div>
 
 				<div class="welcome-bottom">
 					<img src="<?php echo get_template_directory_uri(); ?>/library/images/employee-group-photo.png" class="group-photo" />
@@ -202,14 +204,14 @@ Template Name: Home Page Template
 					<div class="left fifty-percent">
 						<p class="dark-blue" style="margin-top: .2em; margin-bottom: .2em;">Colon C<img src="/wp-content/themes/Gateway%20GI/library/images/cancer_screening_star.png" />ncer Screening</p>
 						<p class="blue-large" style="margin-top: .2em; margin-bottom: 1em;">It can save your life!</p>
-						<a class="view-more-button" href="#" style="margin-top: .2em; margin-bottom: 1em;">Read More</a>
+						<center><a class="view-more-button" href="#" style="margin-top: .2em; margin-bottom: 1em;">Read More</a></center>
 					</div><!-- left 50-percent -->
 
 					<div class="right fifty-percent">
 						<p class="dark-blue" style="margin-top: .2em; margin-bottom: .2em;">Hemorrhoids?</p>
 						<p class="blue-large" style="margin-top: .2em; margin-bottom: .2em;">Dont' treat them.<br />Remove them.</p>
 						<p class="dark-blue" style="margin-top: .2em; margin-bottom: 1em;">Ask us!</p>
-						<a class="view-more-button" href="#" style="margin-top: .2em; margin-bottom: 1em;">Read More</a>
+						<center><a class="view-more-button" href="#" style="margin-top: .2em; margin-bottom: 1em;">Read More</a></center>
 					</div>
 
 				</div> <!-- text align center div -->

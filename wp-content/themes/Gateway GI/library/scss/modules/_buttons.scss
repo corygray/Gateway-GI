@@ -26,16 +26,19 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .fancy-button, .fancy-button:active, .fancy-button:visited {
   background-color: #f1c309;
   border-radius: 15px;
-  padding: 6px 50px 6px 20px; ;
+  padding: 7px 12px 6px 0px;
   font-weight: bold;
   color: #FFFFFF;
   text-transform: uppercase;
-  background-image: url('../images/fancy-button-yellow.jpg');
+  background-image: url("../images/fancy-button-yellow.jpg");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 34px;
+  background-size: 42px;
   text-decoration: none;
-
+  display: block;
+  text-align: center;
+  max-width: 285px;
+  margin: 0 auto;
 }
 
 .fancy-button:hover {
@@ -50,7 +53,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   width: 100%;
   background: #51b5e6;
   min-width: 100px;
-  max-width: 215px;
+  max-width: 285px;
   text-align: center;
   color: #FFFFFF;
   border-radius: 15px;
@@ -71,9 +74,17 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   text-transform: uppercase;
   background: #f1c309;
   border-radius: 15px;
-  padding: 5px 20px;
+  padding: 6px 20px;
   font-weight: bold;
   text-decoration: none;
+  display: block;
+  max-width: 285px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.page-id-22 .view-more-button {
+  margin-bottom: 50px;
 }
 
 .previous {
@@ -146,3 +157,36 @@ and it will create a button dependant on those variables.
   } // end active
 
 } // end blue button
+
+
+@media only screen and (min-width: 480px) {
+
+  .fancy-button, .fancy-button:active, .fancy-button:visited {
+    max-width: 335px;
+  }
+
+  .blue-button, .blue-button:active, .blue-button:visited {
+    max-width: 335px;
+  }
+
+  .view-more-button, .read-more-button, .view-more-button:visited, .read-more-button:visited, .view-more-button:active, .read-more-button:active {
+    max-width: 335px;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+  .fancy-button, .fancy-button:active, .fancy-button:visited {
+    max-width: 300px;
+  }
+
+  .blue-button, .blue-button:active, .blue-button:visited {
+    max-width: 200px;
+  }
+
+  .view-more-button, .read-more-button, .view-more-button:visited, .read-more-button:visited, .view-more-button:active, .read-more-button:active {
+    max-width: 200px;
+    margin: 0;
+  }
+}
