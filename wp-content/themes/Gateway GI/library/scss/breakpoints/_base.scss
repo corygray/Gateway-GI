@@ -124,7 +124,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 32px;
+	font-size: 33px;
 	line-height: 35px;
 	letter-spacing: 2px;
 }
@@ -656,6 +656,8 @@ h2.sub-header {
     position: relative;
     overflow: hidden;
     text-align: center;
+    padding-left: 6%;
+    padding-right: 6%;
 
     h1 {
     	margin-bottom: 10px;
@@ -675,8 +677,7 @@ h2.sub-header {
 	    display: block;
 	    bottom: -12px;
 	    margin-top: 15px;
-	    padding-left: 10%;
-	    padding-right: 10%;
+	    padding-right: 7%;
 	    position: absolute;
 
 	    .group-photo {
@@ -691,8 +692,8 @@ h2.sub-header {
 	text-align: center;
 	margin-right: 10%;
 	margin-left: 10%;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+	padding-bottom: .5em;
+	overflow: auto;
 
 
 	h1 {
@@ -1083,6 +1084,10 @@ p.need-help {
 	}
 }
 
+.page-id-28 .doctor p.blue {
+	margin-bottom: 5px;
+}
+
 .page-id-24 {
 
 	.excerpt-read-more, .excerpt-read-more:active, .excerpt-read-more:visited {
@@ -1127,7 +1132,6 @@ p.need-help {
   ul {
     width: 335px;
     margin: 0 auto;
-    padding-left: 20px;
   }
 }
 

@@ -186,9 +186,16 @@ them in here, they won't work.
 /******************/
 /* CUSTOM STYLES */
 /****************/
+h1 {
+  font-size: 45px;
+  line-height: 40px; }
+
 .welcome .welcome-bottom {
   bottom: -5px;
   max-height: 150px; }
+
+.welcome-blurb {
+  padding-bottom: 1.5em; }
 
 .page-content {
   padding-left: 10%;
@@ -283,7 +290,7 @@ p.white br {
 .doctor-image {
   padding-left: 0px;
   padding-right: 15px;
-  padding-bottom: 25px; }
+  padding-bottom: 10px; }
 
 .page-id-22 .locations {
   padding-bottom: 3em; }
@@ -303,6 +310,9 @@ p.white br {
 .page-id-24 .excerpt-read-more, .page-id-24 .excerpt-read-more:active, .page-id-24 .excerpt-read-more:visited {
   margin: 0;
   margin-top: 12px; }
+
+.archive-accordion-month {
+  text-align: center; }
 
 /*********************
 NAVIGATION STYLES
@@ -442,8 +452,7 @@ NAVIGATION STYLES
 ***CUSTOM STYLES****
 *******************/
 h1, .h1 {
-  font-size: 2.8em;
-  line-height: 1.0em;
+  font-size: 45px;
   letter-spacing: 3px; }
 
 .header {
@@ -465,7 +474,7 @@ h1, .h1 {
       margin-right: 10px; }
       .header .desktop-nav .menu li a {
         color: #7d7d7d;
-        font-size: 13px;
+        font-size: 12px;
         text-transform: uppercase; }
     .header .desktop-nav .menu li:last-child {
       margin-right: 0px; }
@@ -692,6 +701,9 @@ p.satisfaction-testimonials {
 
 .sidebar-left.post {
   clear: inherit; }
+
+.archive-accordion-month {
+  text-align: left; }
 
 /*
 you can call the larger styles if you want, but there's really no need

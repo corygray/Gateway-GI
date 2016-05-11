@@ -28,7 +28,7 @@ on larger screens.
 				margin-right: 30px;
 
 				a {
-					font-size: 15px;
+					font-size: 16px;
 				}
 			}
 		}
@@ -47,6 +47,11 @@ on larger screens.
 
 	br.welcome-header {
 	  display: none;
+	}
+
+	.fancy-button {
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -67,7 +72,7 @@ on larger screens.
 		float: left;
 		width: 40%;
 		padding-left: 40px;
-		margin-top: 18%;
+		margin-top: 8%;
 
 		.left {
 			display: block;
@@ -94,6 +99,7 @@ on larger screens.
 .welcome-blurb {
 	max-width: 1030px; 
 	margin: 0 auto;
+	padding-top: .5em; 
 }
 
 .patient-satisfaction {

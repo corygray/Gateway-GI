@@ -26,6 +26,11 @@ them in here, they won't work.
 /* CUSTOM STYLES */
 /****************/
 
+h1 {
+	font-size: 45px;
+	line-height: 40px;
+}
+
 
 .welcome {
 
@@ -36,6 +41,10 @@ them in here, they won't work.
 		bottom: -5px;
 		max-height: 150px;
 	}
+}
+
+.welcome-blurb {
+	padding-bottom: 1.5em;
 }
 
 .page-content {
@@ -160,7 +169,7 @@ p.white br {
 .doctor-image {
 	padding-left: 0px;
 	padding-right: 15px;
-	padding-bottom: 25px;
+	padding-bottom: 10px;
 
 }
 
@@ -207,6 +216,10 @@ p.white br {
     margin: 0;
     margin-top: 12px;
   }
+}
+
+.archive-accordion-month {
+	text-align: center;
 }
 
 /*********************
