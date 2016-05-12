@@ -56,7 +56,7 @@ Template Name: Home Page Template
 					Save time at your appointment by completing forms prior to your visit!
 					</p>
 
-					<p style="margin-bottom: 50px;"><a href="#" class="fancy-button">
+					<p style="margin-bottom: 50px;"><a href="/patient-forms" class="fancy-button">
 					Patient Forms
 					</a></p>
 
