@@ -62,11 +62,25 @@
 
 					<ul>
 						<li class="has-child"><a href="/about">About</a></li>
-						<li class="sub-page"><a href="/doctor-bios">Doctor Bios</a></li>
-						<li class="sub-page last-child"><a href="/testimonials">Testimonials</a></li>
-						<li><a href="/our-doctors">Our Doctors</a></li>
+							<li class="sub-page"><a href="/doctor-bios">Doctor Bios</a></li>
+							<li class="sub-page last-child"><a href="/testimonials">Testimonials</a></li>
+						<li class="has-child"><a href="/our-doctors">Our Doctors</a></li>
+							<li class="sub-page"><a href="/our-doctors/andrew-y-su-m-d/">Andrew Y. Su, M.D.</a></li>
+							<li class="sub-page"><a href="/our-doctors/brian-c-mcmorrow-m-d/">Brian C. McMorrow, M.D.</a></li>
+							<li class="sub-page"><a href="/our-doctors/cheri-m-carmody-a-n-p/">Cheri M. Carmody, A.N.P.</a></li>
+							<li class="sub-page"><a href="/our-doctors/david-d-benage-m-d/">David D Benage, M.D.</a></li>
+							<li class="sub-page"><a href="/our-doctors/fred-h-williams-m-d/">Fred H. Williams, M.D.</a></li>
+							<li class="sub-page"><a href="/our-doctors/jeffrey-e-mathews-m-d/">Jeffrey E. Mathews, M.D.</a></li>
+							<li class="sub-page"><a href="/our-doctors/jeffrey-t-kreikemeier-m-d/">Jeffrey T. Kreikemeier, M.D.</a></li>
+							<li class="sub-page"><a href="/our-doctors/loren-h-marshall-m-d/">Loren H. Marshall, M.D.</a></li>
+							<li class="sub-page last-child"><a href="/our-doctors/richard-t-riegel-m-d/">Richard T. Riegel, M.D.</a></li>
 						<li><a href="#">Patient Forms</a></li>
-						<li><a href="/procedures">Procedures</a></li>
+						<li class="has-child"><a href="/procedures">Procedures</a></li>
+							<li class="sub-page"><a href="/procedures/capsule-endoscopy/">Capsule Endoscopy</a></li>
+							<li class="sub-page"><a href="/procedures/colonoscopy/">Colonoscopy</a></li>
+							<li class="sub-page"><a href="/procedures/ercp/">ERCP</a></li>
+							<li class="sub-page"><a href="/procedures/hydrogen-and-methane-breath-testing/">Hydrogen and Methane Breath Testing</a></li>
+							<li class="sub-page last-child"><a href="/procedures/upper-endoscopy/">Upper Endoscopy</a></li>
 						<li><a href="/locations">Locations</a></li>
 						<li><a href="/faqs">FAQs</a></li>
 						<li><a href="/news">News</a></li>

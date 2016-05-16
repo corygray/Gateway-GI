@@ -140,3 +140,68 @@ on larger screens.
 	max-width: 1030px; 
 	margin: 0 auto;
 }
+
+.tablet-desktop-areas {
+
+	.areas-infograph-wrap {
+		background-image: url('/wp-content/themes/Gateway%20GI/library/images/diagram-1240up.png');
+		background-size: 600px;
+		width: 645px;
+    	height: 630px;
+	}
+
+	.area {
+
+		p {
+
+			font-size: 20px;
+		}
+	}
+
+	.toggle {
+
+		ul {
+
+			li {
+				font-size: 16px;
+			}
+		}
+	}
+
+	.liver {
+		top: 339px;
+		left: 35px;
+	}
+
+	.gall-bladder {
+		top: 392px;
+		left: -120px;
+	}
+
+	.large-intestine {
+		top: 497px;
+		left: -20px;
+	}
+
+	.esophagus {
+		top: 246px;
+		right: 12px;
+
+	}
+
+	.stomach {
+		top: 338px;
+		right: -87px;
+	}
+
+	.pancreas {
+	    top: 399px;
+	    right: 101px;
+	}
+
+	.small-intestine {
+		right: -69px;
+		top: 471px;
+	}
+
+}

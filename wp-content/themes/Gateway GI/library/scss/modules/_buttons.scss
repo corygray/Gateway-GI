@@ -26,7 +26,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .fancy-button, .fancy-button:active, .fancy-button:visited {
   background-color: #f1c309;
   border-radius: 15px;
-  padding: 7px 12px 6px 0px;
+  padding: 7px 12px 6px 0px !important;
   font-weight: bold;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -72,12 +72,16 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   text-transform: uppercase;
   background: #f1c309;
   border-radius: 15px;
-  padding: 6px 20px;
+  padding: 6px 20px !important;
   font-weight: bold;
   text-decoration: none;
   display: block;
   text-align: center;
   margin: 0 auto;
+}
+
+.accordion-archives {
+  font-size: 16px;
 }
 
 .page-id-22 .view-more-button {
@@ -106,6 +110,23 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 
 a.view-more-button.yellow.next {
   float: right;
+}
+
+.recent-news .news-post {
+  margin-bottom: 30px;
+}
+
+.recent-news .news-post .view-more-button {
+  display: inline;
+  background: #FFFFFF;
+  padding-left: 0px;
+  margin-left: 0px;
+  color: #51b5e6;
+
+}
+
+.recent-news .news-post .view-more-button:hover {
+  color: #51b5e6 !important;
 }
 
 
