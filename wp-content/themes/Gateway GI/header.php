@@ -43,7 +43,7 @@
 
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
-		<?php // end of wordpress head ?>
+		<?php // end of wordpress head ?>http://staging.gatewaygi.com/our-doctors
 
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
@@ -62,7 +62,6 @@
 
 					<ul>
 						<li class="has-child"><a href="/about">About</a></li>
-							<li class="sub-page"><a href="/doctor-bios">Doctor Bios</a></li>
 							<li class="sub-page last-child"><a href="/testimonials">Testimonials</a></li>
 						<li class="has-child"><a href="/our-doctors">Our Doctors</a></li>
 							<li class="sub-page"><a href="/our-doctors/andrew-y-su-m-d/">Andrew Y. Su, M.D.</a></li>
@@ -79,7 +78,7 @@
 							<li class="sub-page"><a href="/procedures/capsule-endoscopy/">Capsule Endoscopy</a></li>
 							<li class="sub-page"><a href="/procedures/colonoscopy/">Colonoscopy</a></li>
 							<li class="sub-page"><a href="/procedures/ercp/">ERCP</a></li>
-							<li class="sub-page"><a href="/procedures/hydrogen-and-methane-breath-testing/">Hydrogen and Methane Breath Testing</a></li>
+							<li class="sub-page"><a href="/procedures/hydrogen-and-methane-breath-testing/">Hydrogen & Methane Breath Testing</a></li>
 							<li class="sub-page last-child"><a href="/procedures/upper-endoscopy/">Upper Endoscopy</a></li>
 						<li><a href="/locations">Locations</a></li>
 						<li><a href="/faqs">FAQs</a></li>
@@ -109,7 +108,7 @@
 
 					<ul class="secondary-desktop-menu">
 
-						<li><a href="/contact">contact us</a></li>
+						<li><a href="/contact-us">contact us</a></li>
 						<li><a href="/resources">resources</a></li>
 						<li><input type="text" class="fancy-input" placeholder="search"/></li>
 
